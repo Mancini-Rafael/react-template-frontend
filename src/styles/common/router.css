@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: lightblue
+}
+
+a.nav-link{
+  font-family: MontserratRegular;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
+  
