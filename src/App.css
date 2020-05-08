@@ -1,0 +1,65 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --almost-white: #fafafc;
+  --almost-grey: #edeef0;
+  --light-grey-blue: #95a9d3;
+  --greyish-brown: #555555;
+  --dusty-orange: #f3783c;
+  --teal-green: #249f93;
+  --macaroni-and-cheese: #ffc72d;
+  --blush: #f38782;
+  --brownish-grey: #717171;
+  --brown-grey: #8d8d8d;
+  --very-light-pink: #c6c6c6;
+  --pale: #fbd7d5;
+  --light-peach: #f9c9c7;
+  --light-salmon: #f5a19d;
+  --pale-salmon: #f7afab;
+  --peach: #f7a57d;
+  --pale-orange: #f59667;
+  --orangish: #f48751;
+  --pale-peach: #ffecb9;
+  --off-white: #fff8e7;
+  --light-tan: #ffe6a1;
+  --wheat: #ffdf8a;
+  --yellow-tan: #ffd973;
+  --light-gold: #ffd35b;
+  --maize: #ffcd44;
+  --duck-egg-blue: #cee9e7;
+  --pale-turquoise: #b6dfdb;
+  --ice: #e6f4f3;
+  --light-teal: #9dd4cf;
+  --greyblue: #6dbfb7;
+  --pale-teal: #85c9c3;
+  --greyish-teal: #54b4ab;
+  --greeny-blue: #3ca99f;
+  --pale-grey: #f3f5fa;
+  --very-light-blue: #e7ebf5;
+  --light-periwinkle: #dbe2f0;
+  --powder-blue: #c4cfe6;
+  --light-blue-grey: #b8c5e1;
+  --cloudy-blue: #acbcdc;
+}
+
+@font-face {
+  font-family: MontSerratRegular;
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: MontSerratBold;
+  src: url('./assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: MontSerratSemiBold;
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+body {
+  background-color: var(--white);
+  width: 1392px;
+  height: 4153px;
+  margin: 0 auto;
+}
