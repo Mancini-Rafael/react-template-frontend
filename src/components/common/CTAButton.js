@@ -1,6 +1,6 @@
 import React from '../../../node_modules/react';
 import { Button} from '../../../node_modules/react-bootstrap';
-import '../../styles/common/ctabutton.css'
+import './CTAButton.css'
 
 function CTAButton(props) {
   return (

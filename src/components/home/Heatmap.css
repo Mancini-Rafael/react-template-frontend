@@ -1,0 +1,10 @@
+.heatmap {
+  width: 96%;
+  margin-left: 2%;
+  font-size: 44px;
+  color: black;
+  height: 529px;
+  border-radius: 2px;
+  background-color: var(--white);
+  vertical-align: middle;
+}
