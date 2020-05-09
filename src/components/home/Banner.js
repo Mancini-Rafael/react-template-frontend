@@ -16,7 +16,7 @@ function Banner(props) {
             {props.subtitle}
           </div>
           <Image src={BannerImg} fluid/>
-          <CTAButton title='Saiba Mais' carat={true} className='CTA-banner'></CTAButton>
+          <CTAButton redirectPath='/sign_up' title='Saiba Mais' carat={true} className='CTA-banner'></CTAButton>
         </Col>
       </Row>
     </Container>

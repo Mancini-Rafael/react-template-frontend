@@ -8,11 +8,17 @@ import CTAButton from './CTAButton';
 const findPos = (obj) => {
   var curtop = 0;
   if (!!obj && obj.offsetParent) {
-      do {
-          curtop += obj.offsetTop;
+      do { 
+        curtop += obj.offsetTop;
       } while (obj = obj.offsetParent);
-  return [curtop];
+    return [curtop];
   }
+}
+
+const scrollTo = (objId) => {
+  return (
+    window.scroll(0, findPos(document.getElementById(objId)))
+  )
 }
 
 
@@ -31,18 +37,16 @@ function Header() {
               <Link to='/about'>Sobre</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/#solutions' onClick={ () => window.scroll(0, findPos(document.getElementById("solution-section"))) }>Soluções</Link>
+              <Link to='/#solutions' onClick={ () => scrollTo('solution-section') }>Soluções</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/#platform' onClick={ () => window.scroll(0, findPos(document.getElementById("platform-section")))}>Plataforma</Link>
+              <Link to='/#platform' onClick={ () => scrollTo('platform-section')}>Plataforma</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/blog'>Blog</Link>
+              <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/contact'>
-                <CTAButton className='CTA' title='Ser um Beta Tester'/>
-              </Link>
+              <CTAButton redirectPath='/contact?type=beta_user' className='CTA' title='Ser um Beta Tester'/>
             </Nav.Item>
           </Nav>
         </Col>

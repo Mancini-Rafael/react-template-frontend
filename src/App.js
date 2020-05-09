@@ -4,8 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // CSS Bootstrap
 import Header from './components/common/Header'
 import Home from './components/home/Home'
 import About from './components/about/About'
+import SignUp from './components/sign_up/SignUp'
 import Contact from './components/contact/Contact'
-import Blog from './components/blog/Blog'
+import Footer from './components/common/Footer'
 import './App.css'
 
 
@@ -16,9 +17,10 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}></Route>
         <Route path='/about' exact component={About}></Route>
+        <Route path='/sign_up' exact component={SignUp}></Route>
         <Route path='/contact' exact component={Contact}></Route>
-        <Route path='/blog' exact component={Blog}></Route>
       </Switch>
+      <Footer/>
     </Router>
   );
 }
