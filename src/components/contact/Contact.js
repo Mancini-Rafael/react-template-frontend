@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import queryString from 'query-string'
 import './Contact.css'
 
 
-function Contact() {
+function Contact({location }) {
+  const [contactType, setContactType] = useState('default')
+  const changeContactType = (type) => setContactType(type)
+  
+  useEffect(() => {
+    changeContactType(queryString.parse(location.search).type)
+  });  
+  
   return (
-    <h1>Contact PAGE</h1>
+    <p>
+      <strong>Render a {contactType} contact page</strong>
+    </p>
   );
 }
 
