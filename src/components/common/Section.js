@@ -4,7 +4,7 @@ import './Section.css'
 
 function Section(props) {
   return (
-    <Container className={`section ${props.sectionClassName}`}>
+    <Container id={`${props.id}-section`} className={`section ${props.sectionClassName}`}>
       <Row>
         <Col className='section-title'>
           <div className={props.titleClassName}>{props.title}</div>

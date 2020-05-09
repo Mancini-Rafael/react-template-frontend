@@ -1,0 +1,101 @@
+.carousel-options-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3%;
+  color: var(--brown-grey);
+}
+.carousel-options-selector .option-study {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.carousel-options-selector .option-data {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.carousel-options-selector .option-statistical-model {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.carousel-options-selector .option-study.active{
+  color: var(--dusty-orange);
+}
+.carousel-options-selector .option-data.active{
+  color: var(--teal-green);
+}
+.carousel-options-selector .option-statistical-model.active{
+  color: var(--blush);
+}
+.carousel {
+  background-color: var(--almost-white);
+}
+.carousel .slide {
+  background-color: transparent;
+}
+.carousel.carousel-slider .control-arrow {
+  color: var(--brownish-grey);
+}
+.carousel .control-dots {
+  position: relative;
+  margin-top: 8px;
+}
+.carousel .control-dots .dot {
+  opacity: 1;
+  background-color: var(--dusty-orange);
+  width: 5px;
+  height: 5px;
+}
+.carousel .control-dots .dot.selected {
+  background-color: var(--white);
+}
+.carousel-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.carousel-cards.card {
+  width: 297px;
+  height: 307px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--almost-white);
+}
+.carousel-cards .title {
+  font-family: MontserratSemiBold;
+  font-size: 14px;
+  text-align: left;
+}
+.carousel-cards .topic {
+  font-family: MontserratSemiBold;
+  font-size: 24px;
+  text-align: left;
+  color: var(--brownish-grey);
+}
+.carousel-cards .text {
+  font-family: MontserratRegular;
+  font-size: 16px;
+  text-align: left;
+  color: var(--greyish-brown);
+}
+.carousel-cards.study-card {
+  color: var(--dusty-orange);
+}
+.carousel-cards .study-divider {
+  height: 5px;
+  background-color: var(--dusty-orange);
+  width: 100%;
+}
+.carousel-cards.data-card {
+  color: var(--teal-green);
+}
+.carousel-cards .data-divider {
+  height: 5px;
+  background-color: var(--teal-green);
+  width: 100%;
+}
+.carousel-cards.statistical_model-card {
+  color: var(--blush);
+}
+.carousel-cards .statistical_model-divider {
+  height: 5px;
+  background-color: var(--blush);
+  width: 100%;
+}

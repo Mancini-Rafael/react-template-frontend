@@ -40,6 +40,8 @@
   --powder-blue: #c4cfe6;
   --light-blue-grey: #b8c5e1;
   --cloudy-blue: #acbcdc;
+  --teal-green: #249f93;
+  --brown-grey: #aaaaaa;
 }
 
 @font-face {
@@ -55,6 +57,10 @@
 @font-face {
   font-family: MontSerratSemiBold;
   src: url('./assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

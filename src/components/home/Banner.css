@@ -23,7 +23,23 @@
   text-align: left;
   color: var(--very-light-pink);
   position: absolute;
-  top: 65%;
+  top: 50%;
   left: 10%;
+}
+button.CTA-banner {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  width: 157px;
+  height: 40px;
+  background-color: #e2e2e2;
+  border-radius: 4px;
+  border: solid 1px var(--black);
+  color: black;
+  font-size: 14px;
+}
+button.CTA-banner:hover {
+  color: var(--blush);
+  background-color: var(--white);
 }
   

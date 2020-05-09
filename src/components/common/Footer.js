@@ -15,28 +15,21 @@ function Footer() {
         </Col>
       </Row>
       <Row className='link-row'>
-        <Col className='links' xs={8}>
+        <Col className='links' xs={6}>
           <Row>
             <Col>
-              <div className='title'>Home</div>
+              <div className='title'>INSTITUCIONAL</div>
               <div className='text-link'>Sobre Nós</div>
-              <div className='text-link'>Nosso time</div>
               <div className='text-link'>Blog</div>
+              <div className='text-link'>Linkedin</div>
             </Col>
             <Col>
-              <div className='title'>Soluções</div>
-              <div className='text-link'>Estudos</div>
-              <div className='text-link'>Dados</div>
-              <div className='text-link'>Modelos Estatísticos</div>
+              <div className='title'>MAPFRY</div>
+              <div className='text-link'>Soluções</div>
+              <div className='text-link'>Plataforma</div>
             </Col>
             <Col>
-              <div className='title'>Plataforma</div>
-              <div className='text-link'>Funcionalidades</div>
-              <div className='text-link'>Aplicação</div>
-              <div className='text-link'>Ser um beta tester</div>
-            </Col>
-            <Col>
-              <div className='title'>Contato</div>
+              <div className='title'>CONTATO</div>
               <div className='text-link'>hello@mapfry.com</div>
             </Col>
           </Row>
@@ -46,7 +39,6 @@ function Footer() {
       <Row className='bottom-row'>
         <Col className='bottom-col'>
           <div className='title'>MAPFRY 2020</div>
-          <div className='title-link'>A CARTO (carto.com) apoia este projeto por meio de seu programa de suporte a iniciativas para o bem social. </div>
           <div className='title'> MEDIUM LINKEDIN</div>
         </Col>
       </Row>

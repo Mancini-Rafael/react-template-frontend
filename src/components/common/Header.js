@@ -5,6 +5,17 @@ import logo from '../../assets/images/Logo-Mapfry.svg'
 import './Header.css'
 import CTAButton from './CTAButton';
 
+const findPos = (obj) => {
+  var curtop = 0;
+  if (!!obj && obj.offsetParent) {
+      do {
+          curtop += obj.offsetTop;
+      } while (obj = obj.offsetParent);
+  return [curtop];
+  }
+}
+
+
 function Header() {
   return (
     <Container className='header'>
@@ -17,13 +28,13 @@ function Header() {
         <Col className='main-menu' xs={8}>
           <Nav>
             <Nav.Item>
-              <Link to='/#solutions'>Soluções</Link>
+              <Link to='/about'>Sobre</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/#platform'>Plataforma</Link>
+              <Link to='/#solutions' onClick={ () => window.scroll(0, findPos(document.getElementById("solution-section"))) }>Soluções</Link>
             </Nav.Item>
             <Nav.Item>
-              <Link to='/contact'>Contato</Link>
+              <Link to='/#platform' onClick={ () => window.scroll(0, findPos(document.getElementById("platform-section")))}>Plataforma</Link>
             </Nav.Item>
             <Nav.Item>
               <Link to='/blog'>Blog</Link>

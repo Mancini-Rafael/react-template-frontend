@@ -2,6 +2,7 @@ import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 import BannerImg from '../../assets/images/banner.png'
 import './Banner.css'
+import CTAButton from '../common/CTAButton';
 
 function Banner(props) {
   return (
@@ -15,6 +16,7 @@ function Banner(props) {
             {props.subtitle}
           </div>
           <Image src={BannerImg} fluid/>
+          <CTAButton title='Saiba Mais' carat={true} className='CTA-banner'></CTAButton>
         </Col>
       </Row>
     </Container>

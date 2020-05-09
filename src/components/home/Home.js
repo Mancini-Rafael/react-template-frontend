@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
-import Carroussel from './Carroussel'
+import Carousel from './Carousel'
 import { Link } from 'react-router-dom';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import Section from '../common/Section'
@@ -13,24 +13,23 @@ import Footer from '../common/Footer'
 import './Home.css'
 
 function Home() {
+  
   return (
     <div>
       <Container>
-        <Banner title="Calculon is gonna kill us and it's all everybody else's fault!"
-                subtitle="No! The cat shelter's on to me. Bender, hurry! 
-                          This fuel's expensive! Also, we're dying! Goodbye, cruel world. 
-                          Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what
-                          would appear to be some sort of cruel muslin and the cute little
-                          pom-pom curtain pull cords. Cruel though they may be…"
+        <Banner title="Começe a traçar o  seu plano de ação pós-crise"
+                subtitle="A Mapfry reúne neste mapa informações de todos os
+                          municípios brasileiros para ajudar a retomada econômica nas 
+                          cidades mais afetadas pela pandemia do novo Coronavírus."
         />
-        <Section sectionClassName='solutions'
+        <Section id='solution' sectionClassName='solutions'
                 titleClassName="solutions-title"
                 title="Soluções"
                 subtitleClassName="solutions-subtitle"
                 subtitle="Encontre a melhor solução para o seu negócio"></Section>
-        <Carroussel></Carroussel>
+        <Carousel></Carousel>
         <Container className='rectangle'>
-          <Section sectionClassName='platform'
+          <Section id='platform' sectionClassName='platform'
                   titleClassName="platform-title"
                   title="PLATAFORMA MAPFRY"
                   subtitleClassName="platform-subtitle"
@@ -46,13 +45,14 @@ function Home() {
               <Col className='feature-layerview'>
                 <Image src={layerviewImg} fluid className='layerviewImg'></Image>
                 <div className='layerview-title'>LAYERVIEW</div>  
-                <div className='layerview-text'>Now that we know who you are, I know who I am.</div>  
+                <div className='layerview-text'>Crie análises dinâmicas e tenha 
+                                                a visualização dos dados em mapas</div>  
               </Col>
               <div className='feature-divider'></div>
               <Col className='feature-reportview'>
                 <Image src={reportviewImg} fluid className='reportviewImg'></Image>    
                 <div className='reportview-title'>REPORTVIEW</div>  
-                <div className='reportview-text'>Now that we know who you are, I know who I am.</div>  
+                <div className='reportview-text'>Visualize seus dados em dashboards e tome decisões sólidas</div>  
               </Col> 
             </Row>
           </Container>
