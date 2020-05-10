@@ -8,3 +8,8 @@ button.call-to-action{
   font-size: 14px;
   text-align: center;
 }
+button.call-to-action img{
+  width: 8px;
+  height: 12px;
+  margin-left: 5%;
+}

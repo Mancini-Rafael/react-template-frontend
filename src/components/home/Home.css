@@ -12,6 +12,8 @@ img.ilustration{
   height: 15px;
   font-family: MontserratBold;
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
   color: var(--dusty-orange);
 }
 .solutions-subtitle {
@@ -35,10 +37,10 @@ img.ilustration{
 }
 .platform-title {
   display: inline-block;
-  width: 184px;
-  height: 15px;
   font-family: MontserratBold;
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
   color: var(--white);
 }
 .platform-subtitle {
@@ -53,7 +55,6 @@ img.ilustration{
   text-align: center;
 }
 button.CTAInterface {
-  border: solid 1px var(--black);
   background-color: var(--almost-grey);
   color: black;
   margin-top: 7%;
@@ -80,6 +81,8 @@ button.CTAInterface:hover {
   font-family: MontserratBold;
   font-size: 14px;
   color: var(--brownish-grey);
+  line-height: 1.29;
+  letter-spacing: 2.8px;
   margin-bottom: 40px;
   left: 50%;
   top: 50%;
@@ -90,6 +93,7 @@ button.CTAInterface:hover {
   font-family: MontserratRegular;
   font-size: 16px;
   text-align: center;
+  line-height: 1.13;
   color: var(--greyish-brown);
 }
 .feature-divider {
@@ -104,6 +108,8 @@ button.CTAInterface:hover {
 .pandemic-title {
   font-family: MontserratBold;
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
   color: var(--dusty-orange);
 }
 .pandemic-subtitle {
@@ -123,12 +129,12 @@ button.CTAPandemic {
   width: 281px;
   height: 40px;
   margin-top: 3%;
-  border: solid 1px var(--black);
+  border: solid 1px var(--blush);
   background-color: var(--almost-grey);
-  color: black; 
+  color: var(--blush);
 }
 button.CTAPandemic:hover {
-  color: var(--blush);
   background-color: var(--white);
+  color: var(--blush);
 }
 

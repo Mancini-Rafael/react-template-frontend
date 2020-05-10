@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Card, Image } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Section from '../common/Section'
+import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg'
 import './About.css'
 
 const MemberCard = (props) => {
@@ -11,7 +11,9 @@ const MemberCard = (props) => {
       <Card.Body>
         <Card.Title className='card-topic'>{props.title}</Card.Title>
         <Card.Title className='card-name'>{props.name}</Card.Title>
-        <Image className='card-linkedin-logo' src={props.linkedinSrc}/>
+        <a rel="noopener noreferrer" target='_blank' href={props.linkedinSrc}>
+          <Image className='card-linkedin-logo' src={linkedinLogo}/>
+        </a>
       </Card.Body>
     </Card>
   );
@@ -24,7 +26,7 @@ function About() {
       <Container className='who-are-we'>
         <Section id='who-are-we' sectionClassName='who-are-we'
                 titleClassName="who-are-we-title"
-                title="Quem Somos"
+                title="QUEM SOMOS"
                 subtitleClassName="who-are-we-subtitle"
                 subtitle="Veteranos em geomarketing" />
         <div className='about-formula'>MAPAS + DADOS + TECNOLOGIA = TRANSFORMAÇÃO</div>
@@ -43,27 +45,28 @@ function About() {
           </p>
         </div>
         <Section id='our-team' sectionClassName='our-team'
-                    titleClassName="our-team-title"
-                    title="Nosso Time"/>
+                 titleClassName="our-team-title"
+                 title="NOSSO TIME"/>
       </Container>
       <div className='team-cards'>
+        {/* TODO ADD CORRECT CARDS */}
         <MemberCard
-          title='Dados'
+          title='DADOS'
           name='Maurilio Soares'
           imgSrc='https://via.placeholder.com/297x361.png?text=Dados'
-          linkedinSrc='https://via.placeholder.com/21x21.png'
+          linkedinSrc='https://www.linkedin.com/in/mauriliojbsoares/'
         />
         <MemberCard
-          title='Soluções'
+          title='SOLUÇÕES'
           name='João Caetano'
           imgSrc='https://via.placeholder.com/297x361.png?text=Soluções'
-          linkedinSrc='https://via.placeholder.com/21x21.png'
+          linkedinSrc='https://www.linkedin.com/in/joao-eduardo-caetano/'
         />
         <MemberCard
-          title='Tecnologia'
+          title='TECNOLOGIA'
           name='Ryuichi Ogawa'
           imgSrc='https://via.placeholder.com/297x361.png?text=Tecnologia'
-          linkedinSrc='https://via.placeholder.com/21x21.png'
+          linkedinSrc='https://www.linkedin.com/in/ryuichiogawa/'
         />
       </div>
     </div>

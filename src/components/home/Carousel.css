@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3%;
+  font-family: MontserratBold;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
   color: var(--brown-grey);
 }
 .carousel-options-selector .option-study {
@@ -62,17 +66,24 @@
   font-family: MontserratSemiBold;
   font-size: 14px;
   text-align: left;
+  line-height: 1.29;
+  letter-spacing: 2.8px;
 }
 .carousel-cards .topic {
+  width: 201px;
+  height: 101px;
   font-family: MontserratSemiBold;
   font-size: 24px;
   text-align: left;
+  line-height: 1.29;
   color: var(--brownish-grey);
 }
 .carousel-cards .text {
+  margin-top: 12px;
   font-family: MontserratRegular;
   font-size: 16px;
   text-align: left;
+  line-height: 1.5;
   color: var(--greyish-brown);
 }
 .carousel-cards.study-card {

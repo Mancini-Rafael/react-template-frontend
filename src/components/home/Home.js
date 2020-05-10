@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Carousel from './Carousel'
-import { Link } from 'react-router-dom';
+import Zoom from 'react-reveal/Zoom';
 import { Container, Image, Row, Col } from 'react-bootstrap';
 import Section from '../common/Section'
 import Heatmap from './Heatmap'
@@ -22,7 +22,7 @@ function Home() {
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
-        title="Soluções"
+        title="SOLUÇÕES"
         subtitleClassName="solutions-subtitle"
         subtitle="Encontre a melhor solução para o seu negócio"></Section>
       <Carousel></Carousel>
@@ -35,7 +35,7 @@ function Home() {
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
-        <CTAButton redirectPath='/contact?type=beta_user' className='CTAInterface' title='Ser um Beta Tester' />
+        <CTAButton showCarat={true} redirectPath='/contact?type=beta_user' className='CTAInterface' title='Ser um Beta Tester' />
         <Container className='platform-features'>
           <Row>
             <Col className='feature-layerview'>
@@ -63,8 +63,10 @@ function Home() {
           sua exposição à epidemia o os principais
           desafios para a recuperação.
           </div>
-        <Heatmap />
-        <CTAButton redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
+        <Zoom>
+          <Heatmap />
+        </Zoom>
+        <CTAButton showCarat={true} redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
       </Container>
     </Container>
   );

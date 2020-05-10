@@ -12,6 +12,8 @@
 .who-are-we-title {
   font-family: MontserratBold;
   font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
   color: var(--dusty-orange);
 }
 .who-are-we-subtitle {
@@ -42,6 +44,8 @@
 .our-team-title {
   font-family: MontserratBold;
   font-size: 12px;
+  line-height: 1.29;
+  letter-spacing: 2.8px;
   color: var(--dusty-orange);
 }
 .team-cards {

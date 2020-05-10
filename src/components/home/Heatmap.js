@@ -21,6 +21,7 @@ function Heatmap() {
 
   return (
     <Container className='heatmap'>
+      {/* TODO REMOVE BUTTON AND ALWAYS ADD HEATMAP */}
       <Button onClick={() => onClick(showHeatMap)}> {showHeatMap ? 'Aperte para esconder' : 'Aperte para mostrar'} </Button>
       { showHeatMap ? <Map/> : null }
     </Container>

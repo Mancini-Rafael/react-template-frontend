@@ -1,12 +1,16 @@
 import React from '../../../node_modules/react';
-import { Button} from '../../../node_modules/react-bootstrap';
+import { Button, Image } from '../../../node_modules/react-bootstrap';
 import { Link } from 'react-router-dom';
+import { caratImg } from '../../assets/images/carat.svg';
 import './CTAButton.css'
 
 function CTAButton(props) {
   return (
     <Link to={props.redirectPath}>
-      <Button className={`call-to-action outline-light ${props.className}`} variant='light'>{props.title}</Button>
+      <Button type={props.type} className={`call-to-action outline-light ${props.className}`} variant='light'>
+        {props.title}
+        {props.showCarat ? <Image src={'https://via.placeholder.com/8x12.png'}/> : null}
+      </Button>
     </Link>
   );
 }
