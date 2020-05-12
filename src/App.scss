@@ -5,24 +5,25 @@ html {
   width: 1392px;
   height: 100%;
   margin: 0 auto;
-}
-body {
-  background-color: $white;
+
+  body {
+    background-color: $white;
+  }
+
+  #root{
+    min-height: 100%;
+    position: relative;
+  }
+
+  footer{
+    height: 460px; 
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+  }
 }
 
-#root{
-  min-height: 100%;
-  position:relative;
-}
 
-#body{
-  padding-bottom: 460px;    /* height of footer */
-}
 
-footer{
-  height: 460px; 
-  width:100%;
-  position: absolute;
-  left: 0;
-  bottom: 0; 
-}
+
