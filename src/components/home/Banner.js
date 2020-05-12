@@ -1,7 +1,8 @@
 import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 import BannerImg from '../../assets/images/banner.png'
-import './Banner.css'
+
+import './Banner.scss'
 
 function Banner(props) {
   return (

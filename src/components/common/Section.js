@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Section.css'
+
+import './Section.scss'
 
 function Section(props) {
   return (

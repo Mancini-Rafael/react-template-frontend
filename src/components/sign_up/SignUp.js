@@ -1,7 +1,8 @@
 import React from 'react';
-import { Card, Image, Row, Col, Container } from 'react-bootstrap';
+import { Card, Image, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './SignUp.css'
+import '../../assets/stylesheets/variables.scss'
+import './SignUp.scss'
 import Section from '../common/Section'
 
 const SignUpCard = (props) => {

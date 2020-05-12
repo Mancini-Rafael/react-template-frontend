@@ -1,15 +1,17 @@
 .section {
   width: 100%;
-  height: 280px;
+  height: auto;
   text-align: center;
-}
-.section .col {
-  text-align: center;
+
+  .col {
+    text-align: center;
+  }
 }
 
 .section-title {
   margin-top: 50px;
 }
+
 .section-subtitle {
   margin-top: 25px;
   margin-bottom: 60px;

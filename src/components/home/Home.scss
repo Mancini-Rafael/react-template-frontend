@@ -1,0 +1,181 @@
+@import "../../assets/stylesheets/variables.scss";
+
+img.ilustration {
+  width: 631px;
+  height: 355px;
+}
+
+/* SOLUTIONS SECTION */
+
+.solutions {
+  background-color: $almost-white;
+  height: auto;
+
+  .solutions-title {
+    display: inline-block;
+    width: 86px;
+    height: 15px;
+    font-family: MontserratBold;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+    color: $dusty-orange;
+  }
+  
+  .solutions-subtitle {
+    display: inline-block;
+    width: 632px;
+    height: 106px;
+    font-family: MontserratBold;
+    font-size: 44px;
+    color: $black;
+  }
+}
+
+/* PLATFORM SECTION */
+
+.rectangle {
+  width: 1107px;
+  height: 2160px;
+  background: linear-gradient(to bottom, $dusty-orange 0%, $dusty-orange 46%, $almost-grey 46%, $almost-grey 100%);
+  backdrop-filter: blur(30px);
+  background-color: $dusty-orange;
+  text-align: center;
+  margin-bottom: 117px;
+  margin-top: -2%;
+  .platform {
+    height: auto;
+
+    .platform-title {
+      display: inline-block;
+      font-family: MontserratBold;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 2.4px;
+      color: $white;
+    }
+    .platform-subtitle {
+      display: inline-block;
+      width: 640px;
+      height: 106px;
+      font-family: MontserratBold;
+      font-size: 44px;
+      color: $black;
+    }
+  }
+
+  .ilustracao-interface {
+    text-align: center;
+  }
+  
+  button.CTAInterface {
+    width: 157px;
+    height: 40px;
+    border-radius: 4px;
+    font-family: MontserratSemiBold;
+    background-color: #e2e2e2;
+    color: $black;
+    font-size: 14px;
+    margin-top: 7%;
+    line-height: 1.57;
+  
+    &:hover {
+      color: $blush;
+      background-color: $white;
+    }
+  }
+  
+  .platform-features {
+    margin-top: 5%;
+    width: 853px;
+    height: 361px;
+    border-radius: 2px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: $almost-white;
+  }
+  
+  .layerviewImg, .reportviewImg {
+    margin-top: 18%;
+    margin-bottom: 10%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .layerview-title, .reportview-title {
+    width: 100%;
+    font-family: MontserratBold;
+    font-size: 14px;
+    color: $brownish-grey;
+    line-height: 1.29;
+    letter-spacing: 2.8px;
+    margin-bottom: 40px;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .layerview-text, .reportview-text {
+    width: 70%;
+    margin-left: 15%;
+    font-family: MontserratRegular;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.13;
+    color: $greyish-brown;
+  }
+  
+  .feature-divider {
+    border-left: 1px solid $greyish-brown;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 10%;
+  }
+}
+
+
+
+
+
+
+
+/* PANDEMIC SECTION */
+
+.pandemic-title {
+  font-family: MontserratBold;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  color: $dusty-orange;
+}
+
+.pandemic-subtitle {
+  font-family: MontserratBold;
+  font-size: 44px;
+  color: $black;
+}
+
+.pandemic-description {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 3%;
+  font-family: MontserratRegular;
+  font-size: 16px;
+  color: $greyish-brown;
+}
+
+button.CTAPandemic {
+  border-radius: 4px;
+  width: 281px;
+  height: 40px;
+  margin-top: 3%;
+  border: solid 1px $blush;
+  background-color: $almost-grey;
+  color: $blush;
+
+  &:hover {
+    background-color: $white;
+    color: $blush;
+  }
+}

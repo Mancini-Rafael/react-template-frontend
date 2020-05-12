@@ -3,7 +3,7 @@ import { Row, Col, Container, Image } from 'react-bootstrap';
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import queryString from 'query-string';
-import './Contact.css';
+import './Contact.scss';
 import ContactForm from './ContactForm';
 import checkSymbol from '../../assets/images/check-symbol.png'
 

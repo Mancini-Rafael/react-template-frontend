@@ -1,15 +1,17 @@
-button.call-to-action{
+button.call-to-action {
   /* Button */
   width: 184px;
   height: 40px;
   border-radius: 4px;
+
   /* Text */
   font-family: MontSerratBold;
   font-size: 14px;
   text-align: center;
-}
-button.call-to-action img{
-  width: 8px;
-  height: 12px;
-  margin-left: 5%;
+
+  img {
+    width: 8px;
+    height: 12px;
+    margin-left: 15%;
+  }
 }

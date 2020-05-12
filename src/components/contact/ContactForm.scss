@@ -1,0 +1,56 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.form-container {
+  width: 367px;
+  border-radius: 2px;
+  border: solid 1px $almost-grey;
+  background-color: $almost-grey;
+  margin-top: 20%;
+  padding: 3% 5% 2% 5%;
+
+  .form-group {
+    text-align: left;
+
+    input {
+      font-family: MontserratRegular;
+      font-size: 14px;
+      line-height: 1.29;
+      color: $brown-grey;
+    }
+
+    .invalid-feedback {
+      font-family: MontserratRegular;
+      font-size: 14px;
+      line-height: 1.29;
+    }
+  }
+
+  .form-label {
+    font-family: MontserratSemiBold;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: left;
+    color: $brownish-grey;
+  }
+
+  .form-check-label {
+    font-family: MontserratSemibold;
+    font-size: 10px;
+    line-height: 1.3;
+    color: $brownish-grey;
+  }
+}
+
+button.CTAFormSubmit {
+  width: 149px;
+  height: 40px;
+  background-color: #f7bcb9;
+  border-radius: 4px;
+  color: $black;
+  font-size: 14px;
+
+  &:hover {
+    color: $blush;
+    background-color: $white;
+  }
+}

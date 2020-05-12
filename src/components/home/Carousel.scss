@@ -1,0 +1,135 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.carousel {
+  background-color: $almost-white;
+
+  .slide {
+    background-color: transparent;
+  }
+
+  &.carousel-slider .control-arrow {
+    color: $brownish-grey;
+  }
+    
+  .control-arrow{
+    height: fit-content;
+    background: #aaaaaa;
+    top: 38%;
+  }
+  .control-dots {
+    position: relative;
+    margin-top: 8px;
+
+    .dot {
+      opacity: 1;
+      background-color: #FCE1D3;
+      width: 5px;
+      height: 5px;
+      box-shadow: none;
+
+      &.selected {
+        background-color: $dusty-orange;
+      }
+    }
+  }
+  
+  .options-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    font-family: MontserratBold;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+    color: $brown-grey;
+
+    .study, .data, .statistical-model {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .study.active, .study:hover{
+      color: $dusty-orange;
+    }
+    .option-data.active, .data:hover {
+      color: $teal-green;
+    }
+    .statistical-model.active, .statistical-model:hover {
+      color: $blush;
+    }
+  }
+
+  .carousel-cards {
+    display: flex;
+    justify-content: space-evenly;
+  
+    &.card {
+      width: 297px;
+      height: 307px;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: $almost-white;
+
+      .card-body {
+        padding: 2rem;
+        box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.16);
+      }
+    }
+  
+    .title {
+      font-family: MontserratSemiBold;
+      font-size: 14px;
+      text-align: left;
+      line-height: 1.29;
+      letter-spacing: 2.8px;
+    }
+  
+    .topic {
+      width: 201px;
+      height: 101px;
+      font-family: MontserratSemiBold;
+      font-size: 24px;
+      text-align: left;
+      line-height: 1.29;
+      color: $brownish-grey;
+    }
+  
+    .text {
+      margin-top: 12px;
+      font-family: MontserratRegular;
+      font-size: 16px;
+      text-align: left;
+      line-height: 1.5;
+      color: $greyish-brown;
+    }
+  
+    &.study-card {
+      color: $dusty-orange;
+    }
+  
+    .study-divider {
+      height: 5px;
+      background-color: $dusty-orange;
+      width: 100%;
+    }
+  
+    &.data-card {
+      color: $teal-green;
+    }
+  
+    .data-divider {
+      height: 5px;
+      background-color: $teal-green;
+      width: 100%;
+    }
+  
+    &.statistical_model-card {
+      color: $blush;
+    }
+  
+    .statistical_model-divider {
+      height: 5px;
+      background-color: $blush;
+      width: 100%;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Button, Row, Col, Container } from 'react-bootstrap';
-import './ContactForm.css'
+import { Form, Button } from 'react-bootstrap';
+import './ContactForm.scss'
 
 function ContactForm(props) {
   const [validated, setValidated] = useState(false);
@@ -14,11 +14,10 @@ function ContactForm(props) {
       event.preventDefault();
       event.stopPropagation();
       const data = new FormData(event.target);
-      // TODO UNCOMMENT
-      // fetch('https://dtml09ljyg.execute-api.sa-east-1.amazonaws.com/sendEmail', {
-      //   method: 'POST',
-      //   body: data,
-      // });
+      fetch(`${process.env.REACT_APP_EMAIL_ENDPOINT}`, {
+        method: 'POST',
+        body: data,
+      });
       props.animateFormSent()
     }
     setValidated(true);

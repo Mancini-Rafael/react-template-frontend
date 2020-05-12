@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Card, Image } from 'react-bootstrap';
 import Section from '../common/Section'
 import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg'
-import './About.css'
+import './About.scss'
 
 const MemberCard = (props) => {
   return (
@@ -49,7 +49,7 @@ function About() {
                  title="NOSSO TIME"/>
       </Container>
       <div className='team-cards'>
-        {/* TODO ADD CORRECT CARDS */}
+        {/* TODO ADD CORRECT */}
         <MemberCard
           title='DADOS'
           name='Maurilio Soares'

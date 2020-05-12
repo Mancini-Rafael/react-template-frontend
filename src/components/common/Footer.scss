@@ -1,0 +1,65 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.footer {
+  width: 100%;
+  height: 460px;
+  background-color: #edeef0;
+  position: relative;
+
+  .logo {
+    margin-top: 60px;
+    margin-left: 140px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .links .row {
+    width: 100%;
+    margin-left: 140px;
+    margin-top: 60px;
+    height: 285px;
+  }
+
+  .title {
+    font-family: MontserratBold;
+    font-size: 18px;
+    color: $black;
+  }
+
+  .text-link {
+    font-family: MontserratRegular;
+    font-size: 18px;
+    margin-top: 10px;
+    color: $greyish-brown;
+  }
+
+  .feature-divider {
+    border: 1px solid $greyish-brown;
+    width: 80%;
+    left: 10%;
+    margin-left: -3px;
+    height: 1px;
+    position: absolute;
+    margin-top: 20%;
+  }
+
+  .bottom-col {
+    display: flex;
+    justify-content: space-around;
+
+    .links {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+    }
+  }
+
+  .bottom-row {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .link-row {
+    height: 65%;
+  }
+}

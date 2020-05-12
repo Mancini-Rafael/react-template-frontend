@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import './Footer.css';
+
+import './Footer.scss';
 import logo from '../../assets/images/Logo-Mapfry.svg'
 import { Link } from 'react-router-dom';
 

@@ -1,0 +1,55 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.sign-up-page {
+  background-color: $almost-white;
+}
+
+.container.sign-up {
+  height: 305px;
+}
+
+.sign-up-title {
+  font-family: MontserratBold;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  color: $dusty-orange;
+}
+
+.sign-up-subtitle {
+  font-family: MontserratBold;
+  font-size: 44px;
+  line-height: 1.18;
+  color: $black;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.sign-up-cards {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+
+  .card {
+    width: 265px;
+    height: 182px;
+    background: linear-gradient(to bottom, $greyish-brown 0%, $greyish-brown 50%, $almost-white 46%, $almost-white 100%);
+  }
+
+  .cards-divider {
+    border-left: 1px solid $very-light-pink;
+    height: 10%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 40%;
+  }
+}
+
+.sign-up-page .card-text {
+  font-family: MontserratSemiBold;
+  font-size: 14px;
+  line-height: 2.29;
+  color: $brownish-grey;
+  margin-top: 30%;
+}

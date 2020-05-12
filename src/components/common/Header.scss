@@ -1,0 +1,45 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.header {
+  height: 152px;
+
+  .row {
+    height: 100%;
+  }
+
+  .logo, .cta, .main-menu {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .nav {
+    justify-content: space-between;
+    width: 100%;
+
+    .link {
+      font-family: MontserratRegular;
+      font-size: 14px;
+      text-align: center;
+      color: $black;
+      display: table-cell;
+      vertical-align: middle;
+      height: 40px;
+    }
+    .link:hover {
+      color: #F3783C;
+    }
+  }
+
+  button.CTA {
+    border: solid 1px #F8B492;
+    background-color: #F8B492;
+    color: $white;
+
+    &:hover {
+      color: $white;
+      background-color: #F59667;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../assets/stylesheets/variables.scss";
+
+.contact {
+  height: 815px;
+  background-color: $almost-white;
+
+  .container {
+    text-align: center;
+  }
+
+  .description {
+    height: 233px;
+    font-family: MontserratSemiBold;
+    font-size: 32px;
+    line-height: 1.25;
+    color: $black;
+    padding-top: 10%;
+  }
+
+  .email-sent-container {
+    height: 815px;
+    background-color: $dusty-orange;
+    text-align: center;
+
+    img.all-ok {
+      margin-top: 20%;
+      background-color: $dusty-orange;
+    }
+
+    .confirmation-title {
+      margin-top: 2%;
+      font-family: MontserratSemiBold;
+      font-size: 32px;
+      line-height: 1.25;
+      color: $white;
+    }
+
+    .confirmation-description {
+      width: 30%;
+      margin-top: 2%;
+      font-family: MontserratRegular;
+      font-size: 16px;
+      line-height: 1.13;
+      color: $white;
+      margin-left: 35%;
+    }
+
+    .go-back {
+      margin-top: 5%;
+      width: 20%;
+      margin-left: 40%;
+      display: flex;
+      justify-content: space-around;
+
+      .text {
+        font-family: MontserratBold;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: 2.8px;
+        color: $white;
+      }
+    }
+  }
+}
