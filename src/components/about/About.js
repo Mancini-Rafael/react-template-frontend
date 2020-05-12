@@ -1,7 +1,10 @@
 import React from 'react';
 import { Container, Card, Image } from 'react-bootstrap';
 import Section from '../common/Section'
-import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg'
+import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg';
+import maurilioImg from '../../assets/images/team_photo_maurilio.png';
+import ryuImg from '../../assets/images/team_photo_ryu.png';
+import joaoImg from '../../assets/images/team_photo_joao.png';
 import './About.scss'
 
 const MemberCard = (props) => {
@@ -53,19 +56,19 @@ function About() {
         <MemberCard
           title='DADOS'
           name='Maurilio Soares'
-          imgSrc='https://via.placeholder.com/297x361.png?text=Soluções'
+          imgSrc={maurilioImg}
           linkedinSrc='https://www.linkedin.com/in/mauriliojbsoares/'
         />
         <MemberCard
           title='SOLUÇÕES'
           name='João Caetano'
-          imgSrc='https://via.placeholder.com/297x361.png?text=Soluções'
+          imgSrc={joaoImg}
           linkedinSrc='https://www.linkedin.com/in/joao-eduardo-caetano/'
         />
         <MemberCard
           title='TECNOLOGIA'
           name='Ryuichi Ogawa'
-          imgSrc='https://via.placeholder.com/297x361.png?text=Tecnologia'
+          imgSrc={ryuImg}
           linkedinSrc='https://www.linkedin.com/in/ryuichiogawa/'
         />
       </div>

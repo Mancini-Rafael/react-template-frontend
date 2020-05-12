@@ -4,6 +4,7 @@ import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import queryString from 'query-string';
 import './Contact.scss';
+import whiteCaretImg from '../../assets/images/caret_white.svg';
 import ContactForm from './ContactForm';
 import checkSymbol from '../../assets/images/check-symbol.png'
 
@@ -30,7 +31,7 @@ const ContactPage = (props) => {
             eval(`contactTexts.${props.contactType}.text`)
           }
         </Col>
-        <Col>
+        <Col className='form'>
           <ContactForm animateFormSent={props.animateFormSent} />
         </Col>
       </Row>
@@ -47,7 +48,7 @@ const Animation = (props) => {
         <div className='confirmation-description'>Tudo pronto para você receber os melhores estudos da Mapfry.</div>
         <div className='go-back'>
           <div>
-            <Image src='https://via.placeholder.com/8x12.png' />
+            <Image src={whiteCaretImg} />
           </div>
           <div>
             <Link to='/' className='text'>

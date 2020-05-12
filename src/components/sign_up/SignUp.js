@@ -2,6 +2,8 @@ import React from 'react';
 import { Card, Image, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../../assets/stylesheets/variables.scss'
+import betaImg from '../../assets/images/beta-icon.svg'
+import dataImg from '../../assets/images/data-icon.svg'
 import './SignUp.scss'
 import Section from '../common/Section'
 
@@ -29,11 +31,11 @@ function SignUp(props) {
           subtitle="Faça parte da nova solução de Geomarketing"></Section>
       </Container>
       <Container className='sign-up-cards'>
-        <SignUpCard logoSrc='https://via.placeholder.com/35x35.png'
+        <SignUpCard logoSrc={betaImg}
               text='Ser um usuário beta'
               redirectPath='/contact?type=beta_user'/>
         <div className='cards-divider'></div>
-        <SignUpCard logoSrc='https://via.placeholder.com/35x35.png'
+        <SignUpCard logoSrc={dataImg}
               text='Ser um parceiro de dados'
               redirectPath='/contact?type=data_partner'/>
       </Container>

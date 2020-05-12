@@ -47,8 +47,7 @@ const DesktopHeader = () => {
             <a className='link' rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
           </Nav.Item>
           <Nav.Item>
-            <CTAButton redirectPath='/contact?type=beta_user' className='CTA' title='
-            m beta tester' />
+            <CTAButton redirectPath='/contact?type=beta_user' className='CTA' title='Ser um beta tester' />
           </Nav.Item>
         </Nav>
       </Col>

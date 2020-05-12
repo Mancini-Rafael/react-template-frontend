@@ -17,6 +17,11 @@
     padding-top: 10%;
   }
 
+  .form {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .email-sent-container {
     height: 815px;
     background-color: $dusty-orange;

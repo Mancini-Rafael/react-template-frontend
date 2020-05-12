@@ -1,7 +1,8 @@
 import React from '../../../node_modules/react';
 import { Button, Image } from '../../../node_modules/react-bootstrap';
 import { Link } from 'react-router-dom';
-import { caratImg } from '../../assets/images/carat.svg';
+import blackCaretImg from '../../assets/images/caret.svg';
+import pinkCaretImg from '../../assets/images/caret_pink.svg';
 
 import './CTAButton.scss'
 
@@ -9,9 +10,11 @@ function CTAButton(props) {
   return (
     <Link to={props.redirectPath}>
       <Button type={props.type} className={`call-to-action outline-light ${props.className}`} variant='light'>
-        {/* TODO ADD DEFAULT CARAT */}
         {props.title}
-        {props.showCarat ? <Image src={'https://via.placeholder.com/8x12.png'}/> : null}
+        {props.showCaret && props.caretColor === 'black' ?
+          <Image src={blackCaretImg} fluid /> : null}
+        {props.showCaret && props.caretColor === 'pink' ?
+          <Image src={pinkCaretImg} fluid /> : null}
       </Button>
     </Link>
   );

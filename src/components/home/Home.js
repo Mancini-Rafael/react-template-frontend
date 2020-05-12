@@ -36,7 +36,7 @@ const DesktopHomePage = () => {
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
-        <CTAButton showCarat={true} redirectPath='/contact?type=beta_user' className='CTAInterface' title='Saiba mais' />
+        <CTAButton showCaret={true} caretColor='black' redirectPath='/contact?type=beta_user' className='CTAInterface' title='Saiba mais' />
         <Container className='platform-features'>
           <Row>
             <Col className='feature-layerview'>
@@ -69,7 +69,7 @@ const DesktopHomePage = () => {
         <Zoom>
           <Heatmap />
         </Zoom>
-        <CTAButton showCarat={true} redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
+        <CTAButton showCaret={true} caretColor='pink' redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
       </Container>
     </div>
   )
@@ -97,7 +97,7 @@ const MobileHomePage = () => {
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
-        <CTAButton showCarat={true} redirectPath='/contact?type=beta_user' className='CTAInterface' title='Saiba mais' />
+        <CTAButton showCaret={true} caretColor='black' redirectPath='/sign_up' className='CTAInterface' title='Saiba mais' />
         <Container className='platform-features'>
           <Row>
             <Col className='feature-layerview'>
@@ -128,7 +128,7 @@ const MobileHomePage = () => {
         <Zoom>
           <Heatmap />
         </Zoom>
-        <CTAButton showCarat={true} redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
+        <CTAButton showCaret={true} caretColor='pink' redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
       </Container>
     </div>
   )

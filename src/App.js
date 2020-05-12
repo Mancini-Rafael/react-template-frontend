@@ -8,6 +8,7 @@ import About from './components/about/About'
 import SignUp from './components/sign_up/SignUp'
 import Contact from './components/contact/Contact'
 import Footer from './components/common/Footer'
+import ScrollToTop from './components/common/ScrollToTop'
 import './App.scss'
 
 
@@ -17,6 +18,7 @@ function App() {
     <div className={isDesktopOrLaptop ? 'root-desktop' : 'root-mobile'}>
       <Router>
         <Header />
+        <ScrollToTop />
         <Switch>
           <Route path='/' exact component={Home}></Route>
           <Route path='/about' exact component={About}></Route>
