@@ -61,16 +61,26 @@
 .team-cards {
   display: flex;
   justify-content: space-evenly;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .team-card {
-  width: 297px;
+  width: 299px;
   height: 490px;
   border-radius: 2px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  background-color: $dusty-orange;
+  background-color: #f3783c;
   margin-bottom: 10%;
+  border: none;
 
+  .card-body {
+    padding: 2rem;
+    box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.16);
+  }
+  .card-img-top {
+    height: 361px;
+  }
   .card-topic {
     font-family: MontserratBold;
     font-size: 12px;

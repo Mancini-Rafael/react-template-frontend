@@ -19,8 +19,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "REACT_APP_STAGE=dev PORT=3001 react-scripts start",
-    "build": "REACT_APP_STAGE=prod react-scripts build",
+    "start": "PORT=3001 react-scripts start",
+    "build": "react-scripts build'",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js --ignore-pattern *.test.js"

@@ -53,7 +53,7 @@ function About() {
         <MemberCard
           title='DADOS'
           name='Maurilio Soares'
-          imgSrc='https://via.placeholder.com/297x361.png?text=Dados'
+          imgSrc='https://via.placeholder.com/297x361.png?text=Soluções'
           linkedinSrc='https://www.linkedin.com/in/mauriliojbsoares/'
         />
         <MemberCard

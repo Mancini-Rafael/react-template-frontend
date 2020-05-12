@@ -7,6 +7,7 @@ import { Carousel as RRCarousel } from 'react-responsive-carousel';
 import './Carousel.scss'
 import MediaQuery from 'react-responsive'
 
+// eslint-disable-next-line
 const cardsInfo = {
   study: {
     info: [
@@ -102,6 +103,7 @@ const groupArray = (data, number_in_group) => {
     group[group_index].push(data[item_index])
     if ((item_index === (data.length - 1)) && group[group_index].length % number_in_group !== 0) {
       var missing_numbers = [...Array(number_in_group - group[group_index].length).keys()];
+      // eslint-disable-next-line
       missing_numbers.forEach(function (item, index) {
         group[group_index].push(data[index])
       })
@@ -131,28 +133,28 @@ const CarouselByType = (props) => {
         autoPlay={true}
         stopOnHover={true}
         showStatus={false}>
-
-        {groupArray(eval(`cardsInfo.${props.type}.info`), 3).map((item, index) => {
-          return (
-            <div key={index} className='carousel-cards'>
-              <Cards index={Math.floor(Math.random() * Math.floor(10000))}
-                subject={props.type}
-                title={item[0].title}
-                topic={item[0].topic}
-                text={item[0].text} />
-              <Cards index={Math.floor(Math.random() * Math.floor(10000))}
-                subject={props.type}
-                title={item[1].title}
-                topic={item[1].topic}
-                text={item[1].text} />
-              <Cards index={Math.floor(Math.random() * Math.floor(10000))}
-                subject={props.type}
-                title={item[2].title}
-                topic={item[2].topic}
-                text={item[2].text} />
-            </div>
-          )
-        })}
+        { // eslint-disable-next-line
+          groupArray(eval(`cardsInfo.${props.type}.info`), 3).map((item, index) => {
+            return (
+              <div key={index} className='carousel-cards'>
+                <Cards index={Math.floor(Math.random() * Math.floor(10000))}
+                  subject={props.type}
+                  title={item[0].title}
+                  topic={item[0].topic}
+                  text={item[0].text} />
+                <Cards index={Math.floor(Math.random() * Math.floor(10000))}
+                  subject={props.type}
+                  title={item[1].title}
+                  topic={item[1].topic}
+                  text={item[1].text} />
+                <Cards index={Math.floor(Math.random() * Math.floor(10000))}
+                  subject={props.type}
+                  title={item[2].title}
+                  topic={item[2].topic}
+                  text={item[2].text} />
+              </div>
+            )
+          })}
       </RRCarousel>
     </Slide>
   );
@@ -194,10 +196,10 @@ function Carousel() {
   return (
     <Container className='carousel'>
       <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <MobileCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType}/>
+        <MobileCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType} />
       </MediaQuery>
       <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <DesktopCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType}/>
+        <DesktopCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType} />
       </MediaQuery>
     </Container>
   );

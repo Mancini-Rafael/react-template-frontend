@@ -7,6 +7,7 @@ import './Contact.scss';
 import ContactForm from './ContactForm';
 import checkSymbol from '../../assets/images/check-symbol.png'
 
+// eslint-disable-next-line
 const contactTexts = {
   beta_user: {
     text: 'Seja um usuário beta e tenha acesso a plataforma Mapfry'
@@ -23,7 +24,12 @@ const ContactPage = (props) => {
   return (
     <Container>
       <Row>
-        <Col className='description'>{eval(`contactTexts.${props.contactType}.text`)}</Col>
+        <Col className='description'>
+          {
+            // eslint-disable-next-line
+            eval(`contactTexts.${props.contactType}.text`)
+          }
+        </Col>
         <Col>
           <ContactForm animateFormSent={props.animateFormSent} />
         </Col>

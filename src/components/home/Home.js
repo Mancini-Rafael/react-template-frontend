@@ -97,7 +97,7 @@ const MobileHomePage = () => {
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
-        <CTAButton showCarat={true} redirectPath='/contact?type=beta_user' className='CTAInterface' title='Ser um Beta Tester' />
+        <CTAButton showCarat={true} redirectPath='/contact?type=beta_user' className='CTAInterface' title='Saiba mais' />
         <Container className='platform-features'>
           <Row>
             <Col className='feature-layerview'>

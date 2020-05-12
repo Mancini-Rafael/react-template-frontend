@@ -8,13 +8,11 @@
   }
 
   &.carousel-slider .control-arrow {
+    height: 15%;
     color: $brownish-grey;
-  }
-    
-  .control-arrow{
-    height: fit-content;
-    background: #aaaaaa;
-    top: 38%;
+    color: #717171;
+    background-color: #aaaaaa;
+    margin-top: 12%;
   }
   .control-dots {
     position: relative;

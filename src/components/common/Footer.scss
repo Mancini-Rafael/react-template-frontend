@@ -6,60 +6,66 @@
   background-color: #edeef0;
   position: relative;
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .col {
+    padding: 0px 15px 0px 15px;
+  }
   .logo {
     margin-top: 60px;
-    margin-left: 140px;
     display: flex;
     justify-content: left;
   }
-
-  .links .row {
-    width: 100%;
-    margin-left: 140px;
-    margin-top: 60px;
-    height: 285px;
+  .link-row {
+    height: 300px;
+    .links .row {
+      margin-top: 60px;
+      height: 285px;
+      padding: 0px 15px 0px 15px;
+      .col {
+        padding: 0px 10px 0px 0px;
+      }
+      .col.second {
+        margin-left: 40px;
+      }
+    }
   }
-
   .title {
     font-family: MontserratBold;
     font-size: 18px;
-    color: $black;
+    color: $brownish-grey;
   }
-
   .text-link {
     font-family: MontserratRegular;
     font-size: 18px;
     margin-top: 10px;
     color: $greyish-brown;
-  }
 
+    &:hover {
+      color: $brownish-grey;
+    }
+  }
   .feature-divider {
-    border: 1px solid $greyish-brown;
+    border: 0.75px solid $brownish-grey;
     width: 80%;
-    left: 10%;
-    margin-left: -3px;
-    height: 1px;
+    height: 0.75px;
     position: absolute;
-    margin-top: 20%;
+    margin-top: -5%;
   }
-
   .bottom-col {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
     .links {
       display: flex;
       justify-content: space-around;
       width: 200px;
+      
+      &:hover {
+        color: $brownish-grey;  
+      }
     }
-  }
-
-  .bottom-row {
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  .link-row {
-    height: 65%;
   }
 }
