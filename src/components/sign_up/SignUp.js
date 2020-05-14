@@ -6,6 +6,7 @@ import betaImg from '../../assets/images/beta-icon.svg'
 import dataImg from '../../assets/images/data-icon.svg'
 import './SignUp.scss'
 import Section from '../common/Section'
+import MediaQuery from 'react-responsive'
 
 const SignUpCard = (props) => {
   return (
@@ -24,7 +25,9 @@ function SignUp(props) {
   return (
     <div className='sign-up-page'>
       <Container className='sign-up'>
-        <Section sectionClassName='sign-up'
+        <Section 
+          id='sign-up'
+          sectionClassName='sign-up'
           titleClassName="sign-up-title"
           title="PLATAFORMA MAPFRY"
           subtitleClassName="sign-up-subtitle"
@@ -34,7 +37,9 @@ function SignUp(props) {
         <SignUpCard logoSrc={betaImg}
               text='Ser um usuário beta'
               redirectPath='/contact?type=beta_user'/>
-        <div className='cards-divider'></div>
+        <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          <div className='cards-divider'></div>
+        </MediaQuery>
         <SignUpCard logoSrc={dataImg}
               text='Ser um parceiro de dados'
               redirectPath='/contact?type=data_partner'/>

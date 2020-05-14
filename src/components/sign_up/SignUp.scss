@@ -1,55 +1,103 @@
 @import "../../assets/stylesheets/variables.scss";
 
-.sign-up-page {
-  background-color: $almost-white;
-}
-
-.container.sign-up {
-  height: 305px;
-}
-
-.sign-up-title {
-  font-family: MontserratBold;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 2.4px;
-  color: $dusty-orange;
-}
-
-.sign-up-subtitle {
-  font-family: MontserratBold;
-  font-size: 44px;
-  line-height: 1.18;
-  color: $black;
-  width: 60%;
-  margin-left: 20%;
-}
-
-.sign-up-cards {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 10%;
-
-  .card {
-    width: 265px;
-    height: 182px;
-    background: linear-gradient(to bottom, $greyish-brown 0%, $greyish-brown 50%, $almost-white 46%, $almost-white 100%);
+.root-desktop {
+  .sign-up-page {
+    background-color: $almost-white;
   }
 
-  .cards-divider {
-    border-left: 1px solid $very-light-pink;
-    height: 10%;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 40%;
+  .container.sign-up {
+    height: 305px;
+  }
+
+  .sign-up-title {
+    font-family: MontserratBold;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+    color: $dusty-orange;
+  }
+
+  .sign-up-subtitle {
+    font-family: MontserratBold;
+    font-size: 44px;
+    line-height: 1.18;
+    color: $black;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .sign-up-cards {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10%;
+
+    .card {
+      width: 265px;
+      height: 182px;
+      background: linear-gradient(to bottom, $greyish-brown 0%, $greyish-brown 50%, $almost-white 46%, $almost-white 100%);
+    }
+
+    .cards-divider {
+      border-left: 1px solid $very-light-pink;
+      height: 10%;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 40%;
+    }
+  }
+
+  .sign-up-page .card-text {
+    font-family: MontserratSemiBold;
+    font-size: 14px;
+    line-height: 2.29;
+    color: $brownish-grey;
+    margin-top: 30%;
   }
 }
 
-.sign-up-page .card-text {
-  font-family: MontserratSemiBold;
-  font-size: 14px;
-  line-height: 2.29;
-  color: $brownish-grey;
-  margin-top: 30%;
+.root-mobile {
+  .sign-up-page {
+    background-color: $almost-white;
+  }
+
+  .sign-up {
+    height: 205px;
+    .sign-up-title {
+      font-family: MontserratBold;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 2.4px;
+      color: $dusty-orange;
+      text-align: left;
+      margin-left: 37px;
+    }
+    .sign-up-subtitle {
+      font-family: MontserratBold;
+      font-size: 24px;
+      line-height: 1.18;
+      color: $black;
+      margin-left: 20%;
+      text-align: left;
+      margin-left: 37px;
+    }
+  }
+
+  .sign-up-cards {
+    margin-left: 37px;
+    
+    .card {
+      width: 265px;
+      height: 182px;
+      background: linear-gradient(to bottom, $greyish-brown 0%, $greyish-brown 50%, $almost-white 46%, $almost-white 100%);
+      margin-bottom: 30px;
+    }
+    .card-text {
+      font-family: MontserratSemiBold;
+      font-size: 14px;
+      line-height: 2.29;
+      color: $brownish-grey;
+      margin-top: 30%;
+    }
+  }
 }
