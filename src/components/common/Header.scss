@@ -50,6 +50,14 @@
 }
 
 .root-mobile {
+  // LOGO
+  a.logo {
+    position: absolute;
+    z-index: 10000;
+    margin-top: 12px;
+    padding-left: 37px;
+  }
+  
   .header {
     height: 56px;
     width: 360px;

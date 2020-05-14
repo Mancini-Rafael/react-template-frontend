@@ -5,6 +5,7 @@ import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg';
 import maurilioImg from '../../assets/images/team_photo_maurilio.png';
 import ryuImg from '../../assets/images/team_photo_ryu.png';
 import joaoImg from '../../assets/images/team_photo_joao.png';
+import MediaQuery from 'react-responsive'
 import './About.scss'
 
 const MemberCard = (props) => {
@@ -26,13 +27,17 @@ const MemberCard = (props) => {
 function About() {
   return (
     <div>
-      <Container className='who-are-we'>
-        <Section id='who-are-we' sectionClassName='who-are-we'
+      <Container className='about'>
+        <Section id='who-are-we' 
+                sectionClassName='who-are-we'
                 titleClassName="who-are-we-title"
                 title="QUEM SOMOS"
                 subtitleClassName="who-are-we-subtitle"
                 subtitle="Veteranos em geomarketing" />
-        <div className='about-formula'>MAPAS + DADOS + TECNOLOGIA = TRANSFORMAÇÃO</div>
+        
+        <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          <div className='about-formula'>MAPAS + DADOS + TECNOLOGIA = TRANSFORMAÇÃO</div>
+        </MediaQuery>
         <div className='about-description'>
           <p>
             Com uma trajetória  de muitos anos de dedicação ao Geomarketing, nossos caminhos se 
@@ -47,9 +52,17 @@ function About() {
             a geração de insights para a solução de problemas de regiões e grandes cidades.
           </p>
         </div>
-        <Section id='our-team' sectionClassName='our-team'
-                 titleClassName="our-team-title"
-                 title="NOSSO TIME"/>
+        <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          <div className='our-team-title'>
+            NOSSO TIME
+          </div>
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          <Section id='our-team'
+                   sectionClassName='our-team'
+                   titleClassName="our-team-title"
+                    title="NOSSO TIME"/>
+        </MediaQuery>
       </Container>
       <div className='team-cards'>
         <MemberCard

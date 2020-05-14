@@ -149,7 +149,7 @@ const MobileHomePage = () => {
 
 function Home() {
   return (
-    <Container className='about-page'>
+    <Container className='home-page'>
       <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
         <MobileHomePage />
       </MediaQuery>

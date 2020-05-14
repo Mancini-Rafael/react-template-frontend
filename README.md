@@ -1,7 +1,7 @@
 ## Mapfry
 
 - **NodeJS:** 13.6.0
-- **NPM:** 6.13.4
+- **Yarn:** 1.21.1
 
 Other packages versions can be found at the [```package.json```](package.json)
 

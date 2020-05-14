@@ -4,17 +4,17 @@
   .container.who-are-we {
     height: 530px;
   }
-  
+
   .section-subtitle {
     margin-bottom: 30px;
   }
-  
+
   .section.who-are-we.container {
     width: 100%;
     height: 160px;
     text-align: center;
   }
-  
+
   .who-are-we-title {
     font-family: MontserratBold;
     font-size: 12px;
@@ -22,14 +22,14 @@
     letter-spacing: 2.4px;
     color: $dusty-orange;
   }
-  
+
   .who-are-we-subtitle {
     font-family: MontserratBold;
     font-size: 44px;
     color: $black;
   }
-  
-  .about-formula {
+
+  .home-formula {
     width: 100%;
     height: 18px;
     font-family: MontserratBold;
@@ -38,8 +38,8 @@
     text-align: center;
     color: $brownish-grey;
   }
-  
-  .about-description {
+
+  .home-description {
     width: 80%;
     height: 211px;
     font-family: MontserratRegular;
@@ -50,7 +50,7 @@
     margin-left: 10%;
     margin-top: 3%;
   }
-  
+
   .our-team-title {
     font-family: MontserratBold;
     font-size: 12px;
@@ -58,14 +58,14 @@
     letter-spacing: 2.8px;
     color: $dusty-orange;
   }
-  
+
   .team-cards {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
     margin-left: 10%;
   }
-  
+
   .team-card {
     width: 299px;
     height: 490px;
@@ -74,14 +74,16 @@
     background-color: #f3783c;
     margin-bottom: 10%;
     border: none;
-  
+
     .card-body {
       padding: 2rem;
       box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
     }
+
     .card-img-top {
       height: 361px;
     }
+
     .card-topic {
       font-family: MontserratBold;
       font-size: 12px;
@@ -89,14 +91,14 @@
       letter-spacing: 2.4px;
       color: $black;
     }
-  
+
     .card-name {
       font-family: MontserratSemiBold;
       font-size: 24px;
       line-height: 0.75;
       color: $black;
     }
-  
+
     .card-linkedin-logo {
       margin-left: 90%;
     }
@@ -104,112 +106,92 @@
 }
 
 .root-mobile {
-  // LOGO
-  a.logo {
-    position: absolute;
-    z-index: 10000;
-    margin-top: 12px;
-    padding-left: 37px;
-  }
+  .about {
+    height: 760px;
 
-  .container.who-are-we {
-    height: 530px;
-  }
-  
-  .section-subtitle {
-    margin-bottom: 30px;
-  }
-  
-  .section.who-are-we.container {
-    width: 100%;
-    height: 160px;
-    text-align: center;
-  }
-  
-  .who-are-we-title {
-    font-family: MontserratBold;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 2.4px;
-    color: $dusty-orange;
-  }
-  
-  .who-are-we-subtitle {
-    font-family: MontserratBold;
-    font-size: 44px;
-    color: $black;
-  }
-  
-  .about-formula {
-    width: 100%;
-    height: 18px;
-    font-family: MontserratBold;
-    font-size: 14px;
-    letter-spacing: 4.8px;
-    text-align: center;
-    color: $brownish-grey;
-  }
-  
-  .about-description {
-    width: 80%;
-    height: 211px;
-    font-family: MontserratRegular;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    color: $greyish-brown;
-    margin-left: 10%;
-    margin-top: 3%;
-  }
-  
-  .our-team-title {
-    font-family: MontserratBold;
-    font-size: 12px;
-    line-height: 1.29;
-    letter-spacing: 2.8px;
-    color: $dusty-orange;
-  }
-  
-  .team-cards {
-    display: flex;
-    justify-content: space-evenly;
-    width: 80%;
-    margin-left: 10%;
-  }
-  
-  .team-card {
-    width: 299px;
-    height: 490px;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background-color: #f3783c;
-    margin-bottom: 10%;
-    border: none;
-  
-    .card-body {
-      padding: 2rem;
-      box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
+    .who-are-we {
+      height: 160px;
+      margin-left: 37px;
+
+      .who-are-we-title {
+        font-family: MontserratBold;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: $dusty-orange;
+        text-align: left;
+      }
+
+      .who-are-we-subtitle {
+        font-family: MontserratBold;
+        font-size: 24px;
+        color: $black;
+        text-align: left;
+      }
     }
-    .card-img-top {
-      height: 361px;
+
+    .about-description {
+      height: 547px;
+      width: 287px;
+      font-family: MontserratRegular;
+      font-size: 16px;
+      line-height: 1.5;
+      color: $greyish-brown;
+      margin-left: 37px;
+      margin-top: 10px;
+      text-align: left;
     }
-    .card-topic {
+
+    .our-team-title {
       font-family: MontserratBold;
       font-size: 12px;
-      line-height: 1.5;
-      letter-spacing: 2.4px;
-      color: $black;
+      line-height: 1.29;
+      letter-spacing: 2.8px;
+      color: $dusty-orange;
+      margin-left: 37px;
     }
-  
-    .card-name {
-      font-family: MontserratSemiBold;
-      font-size: 24px;
-      line-height: 0.75;
-      color: $black;
-    }
-  
-    .card-linkedin-logo {
-      margin-left: 90%;
+
+  }
+
+  .team-cards {
+    margin-left: 37px;
+
+    .team-card {
+      width: 299px;
+      height: 490px;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #f3783c;
+      margin-bottom: 10%;
+      border: none;
+
+      .card-body {
+        padding: 2rem;
+        box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
+      }
+
+      .card-img-top {
+        height: 361px;
+      }
+
+      .card-topic {
+        font-family: MontserratBold;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: $black;
+      }
+
+      .card-name {
+        font-family: MontserratSemiBold;
+        font-size: 24px;
+        line-height: 0.75;
+        color: $black;
+      }
+
+      .card-linkedin-logo {
+        margin-left: 90%;
+      }
     }
   }
 }
