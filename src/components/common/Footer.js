@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
-
+import MediaQuery from 'react-responsive'
 import './Footer.scss';
 import logo from '../../assets/images/Logo-Mapfry.svg'
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ const findPos = (obj) => {
   if (!!obj && obj.offsetParent) {
     do {
       curtop += obj.offsetTop;
-    // eslint-disable-next-line
+      // eslint-disable-next-line
     } while (obj = obj.offsetParent);
     return [curtop];
   }
@@ -68,14 +68,16 @@ function Footer() {
         <Row className='bottom-row'>
           <Col className='bottom-col'>
             <div className='title'>MAPFRY 2020</div>
-            <div className='links'>
-              <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>
-                <div className='title'>MEDIUM</div>
-              </a>
-              <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>
-                <div className='title'>LINKEDIN</div>
-              </a>
-            </div>
+            <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+              <div className='links'>
+                <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>
+                  <div className='title'>MEDIUM</div>
+                </a>
+                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>
+                  <div className='title'>LINKEDIN</div>
+                </a>
+              </div>
+            </MediaQuery>
           </Col>
         </Row>
       </Container>

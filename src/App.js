@@ -25,7 +25,7 @@ function App() {
           <Route path='/sign_up' exact component={SignUp}></Route>
           <Route path='/contact' component={Contact}></Route> */}
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

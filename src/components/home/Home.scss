@@ -223,39 +223,51 @@
 
     /* PLATFORM SECTION */
     .rectangle {
-      width: 1107px;
-      height: 2160px;
-      background: linear-gradient(to bottom, $dusty-orange 0%, $dusty-orange 46%, $almost-grey 46%, $almost-grey 100%);
+      height: 2125px;
+      background: linear-gradient(to bottom, $dusty-orange 0%, $dusty-orange 40.6%, $almost-grey 40.6%, $almost-grey 100%);
       backdrop-filter: blur(30px);
       background-color: $dusty-orange;
-      text-align: center;
-      margin-bottom: 117px;
+      text-align: left;
       margin-top: -2%;
 
       .platform {
-        height: auto;
+        height: 216px;
 
         .platform-title {
-          display: inline-block;
+          width: 86px;
+          height: 15px;
           font-family: MontserratBold;
           font-size: 12px;
           line-height: 1.5;
           letter-spacing: 2.4px;
           color: $white;
+          margin-left: 37px;
+          margin-bottom: 8px;
         }
 
         .platform-subtitle {
-          display: inline-block;
-          width: 640px;
-          height: 106px;
+          width: 245px;
+          height: 93px;
           font-family: MontserratBold;
-          font-size: 44px;
+          font-size: 24px;
+          line-height: 1.33;
           color: $black;
+          margin-left: 37px;
+          text-align: left;
+          margin-bottom: 52px;
         }
       }
 
       .ilustracao-interface {
-        text-align: center;
+        width: 323px;
+        height: 297px;
+        margin-left: 37px;
+
+        img {
+          object-fit: none;
+          object-position: 0 0;
+          height: -webkit-fill-available;
+        }
       }
 
       button.CTAInterface {
@@ -268,6 +280,8 @@
         font-size: 14px;
         margin-top: 7%;
         line-height: 1.57;
+        margin-left: 37px;
+        margin-bottom: 52px;
 
         &:hover {
           background-color: $very-light-pink;
@@ -276,85 +290,100 @@
 
       .platform-features {
         margin-top: 5%;
-        width: 853px;
-        height: 361px;
+        width: 286px;
+        height: 426px;
         border-radius: 2px;
         -webkit-backdrop-filter: blur(30px);
         backdrop-filter: blur(30px);
         background-color: $almost-white;
       }
 
+      .feature-layerview,
+      .feature-reportview {
+        display: block;
+        text-align: center;
+      }
+
       .layerviewImg,
       .reportviewImg {
-        margin-top: 18%;
-        margin-bottom: 10%;
+        margin-top: 32px;
+        width: 50px;
+        height: 50px;
+      }
+
+      .reportviewImg {
+        margin-top: 50px;
         width: 50px;
         height: 50px;
       }
 
       .layerview-title,
       .reportview-title {
-        width: 100%;
         font-family: MontserratBold;
         font-size: 14px;
         color: $brownish-grey;
         line-height: 1.29;
         letter-spacing: 2.8px;
-        margin-bottom: 40px;
-        left: 50%;
-        top: 50%;
+        margin-top: 16px;
       }
 
       .layerview-text,
       .reportview-text {
-        width: 70%;
-        margin-left: 15%;
+        width: 76%;
+        margin-left: 12%;
+        margin-top: 22px;
         font-family: MontserratRegular;
         font-size: 16px;
-        text-align: center;
         line-height: 1.13;
         color: $greyish-brown;
       }
 
       .feature-divider {
-        border-left: 1px solid $greyish-brown;
-        height: 80%;
+        border: 0.75px solid $brownish-grey;
+        height: 0.75px;
         position: absolute;
-        left: 50%;
-        margin-left: -3px;
-        top: 10%;
+        margin-left: 23px;
+        top: 50%;
+        width: 240px;
       }
     }
 
     /* PANDEMIC SECTION */
-    .pandemic-title {
-      font-family: MontserratBold;
-      font-size: 12px;
-      line-height: 1.5;
-      letter-spacing: 2.4px;
-      color: $dusty-orange;
-    }
+    .pandemic {
+      .pandemic-title {
+        font-family: MontserratBold;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: $dusty-orange;
+        text-align: left;
+        margin-left: 37px;
+      }
 
-    .pandemic-subtitle {
-      font-family: MontserratBold;
-      font-size: 44px;
-      color: $black;
+      .pandemic-subtitle {
+        font-family: MontserratBold;
+        font-size: 24px;
+        text-align: left;
+        color: $black;
+        margin-left: 37px;
+      }
+      .section-subtitle {
+        margin-bottom: 10px;
+      }
     }
-
     .pandemic-description {
-      margin-left: 10%;
-      width: 80%;
+      margin-left: 37px;
+      width: 245px;
       margin-bottom: 3%;
       font-family: MontserratRegular;
       font-size: 16px;
-      color: $greyish-brown;
     }
 
     button.CTAPandemic {
       border-radius: 4px;
       width: 281px;
       height: 40px;
-      margin-top: 3%;
+      margin: 40px 0px 40px 37px;
       border: solid 1px $blush;
       background-color: $almost-grey;
       color: $blush;

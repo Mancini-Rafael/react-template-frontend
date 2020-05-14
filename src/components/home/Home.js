@@ -7,6 +7,7 @@ import Section from '../common/Section'
 import Heatmap from './Heatmap'
 import MediaQuery from 'react-responsive'
 import ilustracaoInterface from '../../assets/images/ilustracao-interface.png'
+import ilustracaoInterfaceMobile from '../../assets/images/ilustracao_mobile.png'
 import layerviewImg from '../../assets/images/layer_view_logo.svg'
 import reportviewImg from '../../assets/images/report-view.png'
 import CTAButton from '../common/CTAButton';
@@ -55,7 +56,7 @@ const DesktopHomePage = () => {
             </Col>
           </Row>
         </Container>
-        <Section 
+        <Section
           id='pandemic'
           sectionClassName='pandemic'
           titleClassName="pandemic-title"
@@ -91,14 +92,20 @@ const MobileHomePage = () => {
         subtitleClassName="solutions-subtitle"
         subtitle="Encontre a melhor solução para o seu negócio"></Section>
       <Carousel></Carousel>
-      {/* <Container className='rectangle'>
+      <Container className='rectangle'>
         <Section id='platform' sectionClassName='platform'
           titleClassName="platform-title"
-          title="PLATAFORMA MAPFRY"
+          title="Soluções"
           subtitleClassName="platform-subtitle"
           subtitle="Faça parte da nova solução de Geomarketing"></Section>
         <Container className='ilustracao-interface'>
-          <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
+          <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+            <Image src={ilustracaoInterfaceMobile} fluid className='ilustration'></Image>
+          </MediaQuery>
+          <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+            <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
+          </MediaQuery>
+
         </Container>
         <CTAButton showCaret={true} caretColor='black' redirectPath='/sign_up' className='CTAInterface' title='Saiba mais' />
         <Container className='platform-features'>
@@ -107,9 +114,11 @@ const MobileHomePage = () => {
               <Image src={layerviewImg} fluid className='layerviewImg'></Image>
               <div className='layerview-title'>LAYERVIEW</div>
               <div className='layerview-text'>Crie análises dinâmicas e tenha
-                                                a visualização dos dados em mapas</div>
+                                                  a visualização dos dados em mapas</div>
             </Col>
-            <div className='feature-divider'></div>
+          </Row>
+          <div className='feature-divider'></div>
+          <Row>
             <Col className='feature-reportview'>
               <Image src={reportviewImg} fluid className='reportviewImg'></Image>
               <div className='reportview-title'>REPORTVIEW</div>
@@ -117,7 +126,9 @@ const MobileHomePage = () => {
             </Col>
           </Row>
         </Container>
-        <Section sectionClassName='pandemic'
+        <Section 
+          id='pandemic'
+          sectionClassName='pandemic'
           titleClassName="pandemic-title"
           title="COVID-19"
           subtitleClassName="pandemic-subtitle"
@@ -127,12 +138,12 @@ const MobileHomePage = () => {
           mostra a situação econômica dos municípios,
           sua exposição à epidemia o os principais
           desafios para a recuperação.
-          </div>
+        </div>
         <Zoom>
           <Heatmap />
         </Zoom>
         <CTAButton showCaret={true} caretColor='pink' redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
-      </Container> */}
+      </Container>
     </div>
   )
 }
