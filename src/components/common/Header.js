@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Nav, Image, Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Logo-Mapfry.svg'
@@ -56,25 +56,34 @@ const DesktopHeader = () => {
   )
 }
 const MobileHeader = () => {
-  const isMenuOpen = function(state) {
+  const handleMenuChange = (state) => {
     var el = document.getElementById("mobile-logo");
     if (state.isOpen === true) {
+      setMenuOpen(true)
       el.style.display = "none";
     } else {
       el.style.display = "block";
     }
   };
 
+  const [menuShow, setMenuOpen] = useState(false);
+  const closeMenu = () => {
+    setMenuOpen(false)
+  };
+
   return (
-    <MobileMenu onStateChange={isMenuOpen} noOverlay disableAutoFocus right width={'100%'}>
-      <Link className='logo' to='/'><Image src={logo} /></Link>
-      <Link className='orange' to='/contact?type=beta_user'>Ser um usuário beta</Link>
-      <Link className='orange' to='/contact?type=data_partner'>Ser um parceiro de dados</Link>
-      <Link to='/about'>Sobre nós</Link>
-      <Link to='/sign_up'>Contato</Link>
-      <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
-      <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>LinkedIn</a>
-    </MobileMenu>
+    <div>
+      <MobileMenu isOpen={menuShow} onStateChange={handleMenuChange} noOverlay disableAutoFocus right width={'100%'}>
+        <Link className='logo' onClick={closeMenu} to='/'><Image src={logo} /></Link>
+        <Link className='orange' onClick={closeMenu} to='/contact?type=beta_user'>Ser um usuário beta</Link>
+        <Link className='orange' onClick={closeMenu} to='/contact?type=data_partner'>Ser um parceiro de dados</Link>
+        <Link onClick={closeMenu} to='/about'>Sobre nós</Link>
+        <Link onClick={closeMenu} to='/sign_up'>Contato</Link>
+        <a onClick={closeMenu} rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
+        <a onClick={closeMenu} rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>LinkedIn</a>
+      </MobileMenu>
+      <Link onClick={closeMenu} id='mobile-logo' className='logo' to='/'><Image src={logo} /></Link>
+    </div>
   )
 }
 

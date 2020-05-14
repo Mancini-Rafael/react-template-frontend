@@ -52,7 +52,6 @@ function About() {
                  title="NOSSO TIME"/>
       </Container>
       <div className='team-cards'>
-        {/* TODO ADD CORRECT */}
         <MemberCard
           title='DADOS'
           name='Maurilio Soares'

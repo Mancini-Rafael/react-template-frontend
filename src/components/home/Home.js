@@ -11,8 +11,6 @@ import ilustracaoInterfaceMobile from '../../assets/images/ilustracao_mobile.png
 import layerviewImg from '../../assets/images/layer_view_logo.svg'
 import reportviewImg from '../../assets/images/report-view.png'
 import CTAButton from '../common/CTAButton';
-import { Link } from 'react-router-dom';
-import logo from '../../assets/images/Logo-Mapfry.svg'
 
 import './Home.scss'
 
@@ -80,7 +78,6 @@ const DesktopHomePage = () => {
 const MobileHomePage = () => {
   return (
     <div>
-      <Link id='mobile-logo' className='logo' to='/'><Image src={logo} /></Link>
       <Banner title="Começe a traçar o  seu plano de ação pós-crise"
         subtitle="A Mapfry reúne neste mapa informações de todos os
                           municípios brasileiros para ajudar a retomada econômica nas 
