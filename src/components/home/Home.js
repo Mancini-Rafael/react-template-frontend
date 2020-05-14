@@ -10,6 +10,8 @@ import ilustracaoInterface from '../../assets/images/ilustracao-interface.png'
 import layerviewImg from '../../assets/images/layer_view_logo.svg'
 import reportviewImg from '../../assets/images/report-view.png'
 import CTAButton from '../common/CTAButton';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/Logo-Mapfry.svg'
 
 import './Home.scss'
 
@@ -22,16 +24,16 @@ const DesktopHomePage = () => {
                           cidades mais afetadas pela pandemia do novo Coronavírus."
       />
       <Section id='solution' sectionClassName='solutions'
-        titleClassName="title"
+        titleClassName="solutions-title"
         title="SOLUÇÕES"
-        subtitleClassName="subtitle"
+        subtitleClassName="solutions-subtitle"
         subtitle="Encontre a melhor solução para o seu negócio"></Section>
       <Carousel />
       <Container className='rectangle'>
         <Section id='platform' sectionClassName='platform'
-          titleClassName="title"
+          titleClassName="platform-title"
           title="PLATAFORMA MAPFRY"
-          subtitleClassName="subtitle"
+          subtitleClassName="platform-subtitle"
           subtitle="Faça parte da nova solução de Geomarketing"></Section>
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
@@ -77,6 +79,7 @@ const DesktopHomePage = () => {
 const MobileHomePage = () => {
   return (
     <div>
+      <Link id='mobile-logo' className='logo' to='/'><Image src={logo} /></Link>
       <Banner title="Começe a traçar o  seu plano de ação pós-crise"
         subtitle="A Mapfry reúne neste mapa informações de todos os
                           municípios brasileiros para ajudar a retomada econômica nas 
@@ -88,7 +91,7 @@ const MobileHomePage = () => {
         subtitleClassName="solutions-subtitle"
         subtitle="Encontre a melhor solução para o seu negócio"></Section>
       <Carousel></Carousel>
-      <Container className='rectangle'>
+      {/* <Container className='rectangle'>
         <Section id='platform' sectionClassName='platform'
           titleClassName="platform-title"
           title="PLATAFORMA MAPFRY"
@@ -129,7 +132,7 @@ const MobileHomePage = () => {
           <Heatmap />
         </Zoom>
         <CTAButton showCaret={true} caretColor='pink' redirectPath='/contact?type=default' className='CTAPandemic' title='Receber o estudo completo' />
-      </Container>
+      </Container> */}
     </div>
   )
 }
@@ -140,10 +143,10 @@ function Home() {
   return (
     <Container className='about-page'>
       <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <DesktopHomePage />
+        <MobileHomePage />
       </MediaQuery>
       <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <MobileHomePage />
+        <DesktopHomePage />
       </MediaQuery>
     </Container>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image, Row, Col, Container } from 'react-bootstrap';
 import BannerImg from '../../assets/images/banner.png'
+import MediaQuery from 'react-responsive'
 
 import './Banner.scss'
 
@@ -15,7 +16,9 @@ function Banner(props) {
           <div className='subtitle'>
             {props.subtitle}
           </div>
-          <Image src={BannerImg} fluid/>
+          <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+            <Image src={BannerImg} fluid/>
+          </MediaQuery>
         </Col>
       </Row>
     </Container>

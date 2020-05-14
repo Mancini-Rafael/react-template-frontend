@@ -21,11 +21,11 @@ function App() {
         <ScrollToTop />
         <Switch>
           <Route path='/' exact component={Home}></Route>
-          <Route path='/about' exact component={About}></Route>
+          {/* <Route path='/about' exact component={About}></Route>
           <Route path='/sign_up' exact component={SignUp}></Route>
-          <Route path='/contact' component={Contact}></Route>
+          <Route path='/contact' component={Contact}></Route> */}
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

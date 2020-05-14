@@ -1,18 +1,35 @@
-.section {
-  width: 100%;
-  height: auto;
-  text-align: center;
-
-  .col {
+.root-desktop {
+  .section {
+    width: 100%;
+    height: auto;
     text-align: center;
+    .col {
+      text-align: center;
+    }
+  }
+  .section-title {
+    margin-top: 50px;
+  }
+  .section-subtitle {
+    margin-top: 25px;
+    margin-bottom: 60px;
   }
 }
 
-.section-title {
-  margin-top: 50px;
-}
-
-.section-subtitle {
-  margin-top: 25px;
-  margin-bottom: 60px;
+.root-mobile {
+  .section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    .col {
+      text-align: center;
+    }
+  }
+  .section-title {
+    margin-top: 50px;
+  }
+  .section-subtitle {
+    margin-top: 8px;
+    margin-bottom: 60px;
+  }
 }

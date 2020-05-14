@@ -3,6 +3,7 @@ import { Nav, Image, Row, Col, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Logo-Mapfry.svg'
 import MediaQuery from 'react-responsive'
+import { push as MobileMenu } from 'react-burger-menu'
 
 import './Header.scss'
 import CTAButton from './CTAButton';
@@ -55,39 +56,32 @@ const DesktopHeader = () => {
   )
 }
 const MobileHeader = () => {
+  const isMenuOpen = function(state) {
+    var el = document.getElementById("mobile-logo");
+    if (state.isOpen === true) {
+      el.style.display = "none";
+    } else {
+      el.style.display = "block";
+    }
+  };
+
   return (
-    <Row>
-      <Col className='logo'>
-        <Link to='/'>
-          <Image src={logo} />
-        </Link>
-      </Col>
-      <Col className='main-menu' xs={8}>
-        <Nav>
-          <Nav.Item>
-            <Link className='link' to='/about'>Sobre</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link className='link' to='/#solutions' onClick={() => scrollTo('solution-section')}>Soluções</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link className='link' to='/#platform' onClick={() => scrollTo('platform-section')}>Plataforma</Link>
-          </Nav.Item>
-          <Nav.Item>
-            <a className='link' rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
-          </Nav.Item>
-          <Nav.Item>
-            <CTAButton redirectPath='/contact?type=beta_user' className='CTA' title='
-            m beta tester' />
-          </Nav.Item>
-        </Nav>
-      </Col>
-    </Row>
+    <MobileMenu onStateChange={isMenuOpen} noOverlay disableAutoFocus right width={'100%'}>
+      <Link className='logo' to='/'><Image src={logo} /></Link>
+      <Link className='orange' to='/contact?type=beta_user'>Ser um usuário beta</Link>
+      <Link className='orange' to='/contact?type=data_partner'>Ser um parceiro de dados</Link>
+      <Link to='/about'>Sobre nós</Link>
+      <Link to='/sign_up'>Contato</Link>
+      <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>Blog</a>
+      <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>LinkedIn</a>
+    </MobileMenu>
   )
 }
 
 
 function Header() {
+  
+
   return (
     <Container className='header'>
       <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>

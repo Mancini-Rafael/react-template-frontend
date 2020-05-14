@@ -126,11 +126,38 @@ const Cards = (props) => {
 }
 
 const CarouselByType = (props) => {
-  return (
-    <Slide right>
+  if (!!props.isMobile) {
+    return (
+      <RRCarousel
+        centerMode
+        infiniteLoop={true}
+        showArrows={false}
+        showThumbs={false}
+        autoPlay={true}
+        showStatus={false}
+        swipeable={true}
+        centerSlidePercentage={80}>
+        { // eslint-disable-next-line
+          eval(`cardsInfo.${props.type}.info`).map((item, index) => {
+            return (
+              <div key={index} className='carousel-cards'>
+                <Cards index={Math.floor(Math.random() * Math.floor(10000))}
+                  subject={props.type}
+                  title={item.title}
+                  topic={item.topic}
+                  text={item.text} />
+              </div>
+            )
+          })
+        }
+      </RRCarousel>
+    )
+  } else if (!!props.isDesktop) {
+    return (
       <RRCarousel infiniteLoop={true}
         showArrows={true}
         autoPlay={true}
+        showThumbs={false}
         stopOnHover={true}
         showStatus={false}>
         { // eslint-disable-next-line
@@ -156,8 +183,8 @@ const CarouselByType = (props) => {
             )
           })}
       </RRCarousel>
-    </Slide>
-  );
+    )
+  }
 }
 
 const DesktopCarousel = (props) => {
@@ -168,9 +195,9 @@ const DesktopCarousel = (props) => {
         <div className={`data ${props.carouselType === 'data' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('data')}>DADOS</div>
         <div className={`statistical-model ${props.carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('statistical-model')}>MODELOS ESTATÍSTICOS</div>
       </div>
-      {props.carouselType === 'study' ? <CarouselByType type='study' /> : null}
-      {props.carouselType === 'data' ? <CarouselByType type='data' /> : null}
-      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' /> : null}
+      {props.carouselType === 'study' ? <CarouselByType type='study' isDesktop={true} /> : null}
+      {props.carouselType === 'data' ? <CarouselByType type='data' isDesktop={true} /> : null}
+      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' isDesktop={true} /> : null}
     </div>
   )
 }
@@ -178,14 +205,14 @@ const DesktopCarousel = (props) => {
 const MobileCarousel = (props) => {
   return (
     <div>
-      <div className='carousel-options-selector'>
+      <div className='options-selector'>
         <div className={`study ${props.carouselType === 'study' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('study')}>ESTUDOS</div>
         <div className={`data ${props.carouselType === 'data' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('data')}>DADOS</div>
         <div className={`statistical-model ${props.carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('statistical-model')}>MODELOS ESTATÍSTICOS</div>
       </div>
-      {props.carouselType === 'study' ? <CarouselByType type='study' /> : null}
-      {props.carouselType === 'data' ? <CarouselByType type='data' /> : null}
-      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' /> : null}
+      {props.carouselType === 'study' ? <CarouselByType type='study' isMobile={true} /> : null}
+      {props.carouselType === 'data' ? <CarouselByType type='data' isMobile={true} /> : null}
+      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' isMobile={true} /> : null}
     </div>
   )
 }

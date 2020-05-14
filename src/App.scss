@@ -2,28 +2,46 @@
 
 html {
   scroll-behavior: smooth;
-  width: 1392px;
   height: 100%;
-  margin: 0 auto;
 
-  body {
-    background-color: $white;
+  .root-desktop {
+    width: 1392px;
+    margin: 0 auto;
+    
+    body {
+      background-color: $white;
+    }
+  
+    #root{
+      min-height: 100%;
+      position: relative;
+    }
   }
-
-  #root{
-    min-height: 100%;
-    position: relative;
-  }
-
-  footer{
-    height: 460px; 
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0; 
+  .root-mobile {
+    width: 360px;
+    margin: 0px;
+    background-color: $almost-white;
+    body {
+      background-color: $almost-white;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    #root{
+      min-height: 100%;
+      position: relative;
+    }
   }
 }
 
+footer{
+  height: 460px; 
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0; 
+}
 
 
 

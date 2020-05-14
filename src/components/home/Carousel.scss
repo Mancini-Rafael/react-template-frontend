@@ -1,133 +1,282 @@
 @import "../../assets/stylesheets/variables.scss";
 
-.carousel {
-  background-color: $almost-white;
+.root-desktop {
+  .carousel {
+    background-color: $almost-white;
 
-  .slide {
-    background-color: transparent;
-  }
+    .slide {
+      background-color: transparent;
+    }
 
-  &.carousel-slider .control-arrow {
-    height: 15%;
-    color: $brownish-grey;
-    color: #717171;
-    background-color: #aaaaaa;
-    margin-top: 12%;
-  }
-  .control-dots {
-    position: relative;
-    margin-top: 8px;
-
-    .dot {
-      opacity: 1;
-      background-color: #FCE1D3;
-      width: 5px;
-      height: 5px;
-      box-shadow: none;
-
-      &.selected {
-        background-color: $dusty-orange;
-      }
-    }
-  }
-  
-  .options-selector {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3%;
-    font-family: MontserratBold;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 2.4px;
-    color: $brown-grey;
-
-    .study, .data, .statistical-model {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .study.active, .study:hover{
-      color: $dusty-orange;
-    }
-    .option-data.active, .data:hover {
-      color: $teal-green;
-    }
-    .statistical-model.active, .statistical-model:hover {
-      color: $blush;
-    }
-  }
-
-  .carousel-cards {
-    display: flex;
-    justify-content: space-evenly;
-  
-    &.card {
-      width: 297px;
-      height: 307px;
-      border-radius: 2px;
-      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-      background-color: $almost-white;
-
-      .card-body {
-        padding: 2rem;
-        box-shadow: 0 1px 11px -3px rgba(0, 0, 0, 0.16);
-      }
-    }
-  
-    .title {
-      font-family: MontserratSemiBold;
-      font-size: 14px;
-      text-align: left;
-      line-height: 1.29;
-      letter-spacing: 2.8px;
-    }
-  
-    .topic {
-      width: 201px;
-      height: 101px;
-      font-family: MontserratSemiBold;
-      font-size: 24px;
-      text-align: left;
-      line-height: 1.29;
+    &.carousel-slider .control-arrow {
+      height: 15%;
       color: $brownish-grey;
+      color: #717171;
+      background-color: #aaaaaa;
+      margin-top: 12%;
     }
-  
-    .text {
-      margin-top: 12px;
-      font-family: MontserratRegular;
-      font-size: 16px;
-      text-align: left;
+
+    .control-dots {
+      position: relative;
+      margin-top: 8px;
+
+      .dot {
+        opacity: 1;
+        background-color: #FCE1D3;
+        width: 5px;
+        height: 5px;
+        box-shadow: none;
+
+        &.selected {
+          background-color: $dusty-orange;
+        }
+      }
+    }
+
+    .options-selector {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3%;
+      font-family: MontserratBold;
+      font-size: 12px;
       line-height: 1.5;
-      color: $greyish-brown;
+      letter-spacing: 2.4px;
+      color: $brown-grey;
+
+      .study,
+      .data,
+      .statistical-model {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .study.active,
+      .study:hover {
+        color: $dusty-orange;
+      }
+
+      .option-data.active,
+      .data:hover {
+        color: $teal-green;
+      }
+
+      .statistical-model.active,
+      .statistical-model:hover {
+        color: $blush;
+      }
     }
-  
-    &.study-card {
-      color: $dusty-orange;
+
+    .carousel-cards {
+      display: flex;
+      justify-content: space-evenly;
+
+      &.card {
+        width: 297px;
+        height: 307px;
+        border-radius: 2px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: $almost-white;
+
+        .card-body {
+          padding: 2rem;
+          box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
+        }
+      }
+
+      .title {
+        font-family: MontserratSemiBold;
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.29;
+        letter-spacing: 2.8px;
+      }
+
+      .topic {
+        width: 201px;
+        height: 101px;
+        font-family: MontserratSemiBold;
+        font-size: 24px;
+        text-align: left;
+        line-height: 1.29;
+        color: $brownish-grey;
+      }
+
+      .text {
+        margin-top: 12px;
+        font-family: MontserratRegular;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        color: $greyish-brown;
+      }
+
+      &.study-card {
+        color: $dusty-orange;
+      }
+
+      .study-divider {
+        height: 5px;
+        background-color: $dusty-orange;
+        width: 100%;
+      }
+
+      &.data-card {
+        color: $teal-green;
+      }
+
+      .data-divider {
+        height: 5px;
+        background-color: $teal-green;
+        width: 100%;
+      }
+
+      &.statistical_model-card {
+        color: $blush;
+      }
+
+      .statistical_model-divider {
+        height: 5px;
+        background-color: $blush;
+        width: 100%;
+      }
     }
-  
-    .study-divider {
-      height: 5px;
-      background-color: $dusty-orange;
-      width: 100%;
+  }
+}
+
+.root-mobile {
+  .carousel {
+    background-color: $almost-white;
+    margin-top: 32px;
+
+    .slide {
+      background-color: transparent;
+
     }
-  
-    &.data-card {
-      color: $teal-green;
+
+    .slide.selected {
+      margin: 0 10px 0 10px;
     }
-  
-    .data-divider {
-      height: 5px;
-      background-color: $teal-green;
-      width: 100%;
+
+    .control-dots {
+      position: relative;
+      margin-top: 8px;
+
+      .dot {
+        opacity: 1;
+        background-color: #FCE1D3;
+        width: 5px;
+        height: 5px;
+        box-shadow: none;
+
+        &.selected {
+          background-color: $dusty-orange;
+        }
+      }
     }
-  
-    &.statistical_model-card {
-      color: $blush;
+
+    .options-selector {
+      margin-left: 37px;
+      font-family: MontserratBold;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 2.4px;
+      color: #aaaaaa;
+      text-align: left;
+
+      .study,
+      .data,
+      .statistical-model {
+        margin-bottom: 16px;
+      }
+
+      .study.active,
+      .study:hover {
+        color: $dusty-orange;
+      }
+
+      .option-data.active,
+      .data:hover {
+        color: $teal-green;
+      }
+
+      .statistical-model.active,
+      .statistical-model:hover {
+        color: $blush;
+      }
     }
-  
-    .statistical_model-divider {
-      height: 5px;
-      background-color: $blush;
-      width: 100%;
+
+    .carousel-cards {
+      &.card {
+        width: 285px;
+        height: 342px;
+        border-radius: 2px;
+        background-color: $almost-white;
+
+        .card-body {
+          padding: 2rem;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        }
+      }
+
+      .title {        
+        width: 90px;
+        height: 18px;
+        font-family: MontserratSemiBold;
+        font-size: 14px;
+        text-align: left;
+        line-height: 1.29;
+        letter-spacing: 2.8px;
+        margin-bottom: 15px;
+      }
+
+      .topic {
+        width: 201px;
+        height: 101px;
+        font-family: MontserratSemiBold;
+        font-size: 24px;
+        text-align: left;
+        line-height: 1.33;
+        color: $brownish-grey;
+        margin-bottom: 35px;
+      }
+
+      .text {
+        font-family: MontserratRegular;
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.5;
+        color: $greyish-brown;
+      }
+
+      &.study-card {
+        color: $dusty-orange;
+      }
+
+      .study-divider {
+        height: 5px;
+        background-color: $dusty-orange;
+        width: 100%;
+      }
+
+      &.data-card {
+        color: $teal-green;
+      }
+
+      .data-divider {
+        height: 5px;
+        background-color: $teal-green;
+        width: 100%;
+      }
+
+      &.statistical_model-card {
+        color: $blush;
+      }
+
+      .statistical_model-divider {
+        height: 5px;
+        background-color: $blush;
+        width: 100%;
+      }
     }
   }
 }
