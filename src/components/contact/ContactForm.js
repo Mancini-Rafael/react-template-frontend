@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Image } from 'react-bootstrap';
+import blackCaretImg from '../../assets/images/caret.svg';
 import './ContactForm.scss'
 
 function ContactForm(props) {
@@ -56,12 +57,14 @@ function ContactForm(props) {
         </Form.Group>
         <Form.Group controlId="contact-message">
           <Form.Label>Mensagem</Form.Label>
-          <Form.Control as="textarea" rows="3" name='message'/>
+          <Form.Control as="textarea" rows="3" name='message' />
         </Form.Group>
         <Form.Group controlId="contact-newsletter-accept">
           <Form.Check type="checkbox" name='receberEmail' defaultChecked={true} label="Quero receber e-mails e novidades da Mapfry" />
         </Form.Group>
-        <Button type='submit' className="call-to-action outline-light CTAFormSubmit" variant='light'>Cadastrar</Button>
+        <Button type='submit' title='Cadastrar' className="call-to-action outline-light CTAFormSubmit" variant='light'>
+          Cadastrar <Image src={blackCaretImg} fluid />
+        </Button>
       </Form>
     </div>
   );

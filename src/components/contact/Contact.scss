@@ -1,68 +1,155 @@
 @import "../../assets/stylesheets/variables.scss";
 
-.contact {
-  height: 815px;
-  background-color: $almost-white;
-
-  .container {
-    text-align: center;
-  }
-
-  .description {
-    height: 233px;
-    font-family: MontserratSemiBold;
-    font-size: 32px;
-    line-height: 1.25;
-    color: $black;
-    padding-top: 10%;
-  }
-
-  .form {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .email-sent-container {
+.root-desktop {
+  .contact {
     height: 815px;
-    background-color: $dusty-orange;
-    text-align: center;
+    background-color: $almost-white;
 
-    img.all-ok {
-      margin-top: 20%;
-      background-color: $dusty-orange;
+    .container {
+      text-align: center;
     }
 
-    .confirmation-title {
-      margin-top: 2%;
+    .description {
+      height: 233px;
       font-family: MontserratSemiBold;
       font-size: 32px;
       line-height: 1.25;
-      color: $white;
+      color: $black;
+      padding-top: 10%;
     }
 
-    .confirmation-description {
-      width: 30%;
-      margin-top: 2%;
-      font-family: MontserratRegular;
-      font-size: 16px;
-      line-height: 1.13;
-      color: $white;
-      margin-left: 35%;
-    }
-
-    .go-back {
-      margin-top: 5%;
-      width: 20%;
-      margin-left: 40%;
+    .form {
       display: flex;
-      justify-content: space-around;
+      justify-content: flex-end;
+    }
 
-      .text {
-        font-family: MontserratBold;
-        font-size: 14px;
-        line-height: 1.29;
-        letter-spacing: 2.8px;
+    .email-sent-container {
+      height: 815px;
+      background-color: $dusty-orange;
+      text-align: center;
+
+      img.all-ok {
+        margin-top: 20%;
+        background-color: $dusty-orange;
+      }
+
+      .confirmation-title {
+        margin-top: 2%;
+        font-family: MontserratSemiBold;
+        font-size: 32px;
+        line-height: 1.25;
         color: $white;
+      }
+
+      .confirmation-description {
+        width: 30%;
+        margin-top: 2%;
+        font-family: MontserratRegular;
+        font-size: 16px;
+        line-height: 1.13;
+        color: $white;
+        margin-left: 35%;
+      }
+
+      .go-back {
+        margin-top: 5%;
+        width: 20%;
+        margin-left: 40%;
+        display: flex;
+        justify-content: space-around;
+
+        .text {
+          font-family: MontserratBold;
+          font-size: 14px;
+          line-height: 1.29;
+          letter-spacing: 2.8px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.root-mobile {
+  .contact {
+    height: 815px;
+    background-color: $almost-white;
+    text-align: left;
+    margin-bottom: 5%;
+
+    .logo {
+      margin-top: 42px;
+      margin-left: 37px;
+    }
+    
+    .description-row {
+      width: 290px;
+    }
+    .description {
+      height: 93px;
+      margin-top: 12px;
+      margin-left: 37px;
+      font-family: MontserratBold;
+      font-size: 24px;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $greyish-brown;
+    }
+
+    .form-row {
+      width: 306px;
+      margin-top: 5%;
+    }
+    .form {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0px;
+      margin-left: 37px;
+    }
+
+    // TODO
+    .email-sent-container {
+      height: 840px;
+      background-color: $dusty-orange;
+      text-align: center;
+
+      img.all-ok {
+        margin-top: 20%;
+        background-color: $dusty-orange;
+      }
+
+      .confirmation-title {
+        margin-top: 2%;
+        font-family: MontserratSemiBold;
+        font-size: 24px;
+        line-height: 1.67;
+        color: $white;
+      }
+
+      .confirmation-description {
+        width: 80%;
+        margin-top: 2%;
+        font-family: MontserratRegular;
+        font-size: 16px;
+        line-height: 1.13;
+        color: $white;
+        margin-left: 10%;
+      }
+
+      .go-back {
+        margin-top: 10%;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-around;
+
+        .text {
+          font-family: MontserratBold;
+          font-size: 14px;
+          line-height: 1.29;
+          letter-spacing: 2.8px;
+          color: $white;
+        }
       }
     }
   }
