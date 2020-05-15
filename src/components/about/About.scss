@@ -1,12 +1,23 @@
 @import "../../assets/stylesheets/variables.scss";
 
 .root-desktop {
-  .container.who-are-we {
-    height: 530px;
-  }
-
-  .section-subtitle {
-    margin-bottom: 30px;
+  .about {
+    .who-are-we {
+      height: 530px;
+      .who-are-we-title {
+        font-family: MontserratBold;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: $dusty-orange;
+      }
+    
+      .who-are-we-subtitle {
+        font-family: MontserratBold;
+        font-size: 44px;
+        color: $black;
+      }
+    }
   }
 
   .section.who-are-we.container {
@@ -15,21 +26,7 @@
     text-align: center;
   }
 
-  .who-are-we-title {
-    font-family: MontserratBold;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 2.4px;
-    color: $dusty-orange;
-  }
-
-  .who-are-we-subtitle {
-    font-family: MontserratBold;
-    font-size: 44px;
-    color: $black;
-  }
-
-  .home-formula {
+  .about-formula {
     width: 100%;
     height: 18px;
     font-family: MontserratBold;
@@ -39,7 +36,7 @@
     color: $brownish-grey;
   }
 
-  .home-description {
+  .about-description {
     width: 80%;
     height: 211px;
     font-family: MontserratRegular;
@@ -64,51 +61,52 @@
     justify-content: space-evenly;
     width: 80%;
     margin-left: 10%;
+
+    .team-card {
+      width: 299px;
+      height: 490px;
+      border-radius: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      background-color: #f3783c;
+      margin-bottom: 10%;
+      border: none;
+  
+      .card-body {
+        padding: 2rem;
+        box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
+      }
+  
+      .card-img-top {
+        height: 361px;
+      }
+  
+      .card-topic {
+        font-family: MontserratBold;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 2.4px;
+        color: $black;
+      }
+  
+      .card-name {
+        font-family: MontserratSemiBold;
+        font-size: 24px;
+        line-height: 0.75;
+        color: $black;
+      }
+  
+      .card-linkedin-logo {
+        margin-left: 90%;
+      }
+    }
   }
 
-  .team-card {
-    width: 299px;
-    height: 490px;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    background-color: #f3783c;
-    margin-bottom: 10%;
-    border: none;
-
-    .card-body {
-      padding: 2rem;
-      box-shadow: 0 1px 11px -50px rgba(0, 0, 0, 0.16);
-    }
-
-    .card-img-top {
-      height: 361px;
-    }
-
-    .card-topic {
-      font-family: MontserratBold;
-      font-size: 12px;
-      line-height: 1.5;
-      letter-spacing: 2.4px;
-      color: $black;
-    }
-
-    .card-name {
-      font-family: MontserratSemiBold;
-      font-size: 24px;
-      line-height: 0.75;
-      color: $black;
-    }
-
-    .card-linkedin-logo {
-      margin-left: 90%;
-    }
-  }
+  
 }
 
 .root-mobile {
   .about {
     height: 760px;
-
     .who-are-we {
       height: 160px;
       margin-left: 37px;

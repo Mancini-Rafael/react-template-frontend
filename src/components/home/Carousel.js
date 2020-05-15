@@ -19,7 +19,7 @@ const cardsInfo = {
       {
         title: 'ESTUDOS',
         topic: 'Planejamento de Redes',
-        text: 'Evite a canibalização entre unidades, crie sinergia entre seus pontos  e antecipe a sua expansão'
+        text: 'Evite a canibalização entre unidades, crie sinergia entre seus pontos e antecipe a sua expansão'
       },
       {
         title: 'ESTUDOS',
@@ -126,7 +126,8 @@ const Cards = (props) => {
 }
 
 const CarouselByType = (props) => {
-  if (!!props.isMobile) {
+  // console.log('IS DESKTOP', props.desktop, 'IS MOBILE', props.mobile)
+  if (!!props.desktop) {
     return (
       <RRCarousel
         centerMode
@@ -152,7 +153,7 @@ const CarouselByType = (props) => {
         }
       </RRCarousel>
     )
-  } else if (!!props.isDesktop) {
+  } else if (!!props.mobile) {
     return (
       <RRCarousel infiniteLoop={true}
         showArrows={true}
@@ -187,47 +188,28 @@ const CarouselByType = (props) => {
   }
 }
 
-const DesktopCarousel = (props) => {
-  return (
-    <div>
-      <div className='options-selector'>
-        <div className={`study ${props.carouselType === 'study' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('study')}>ESTUDOS</div>
-        <div className={`data ${props.carouselType === 'data' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('data')}>DADOS</div>
-        <div className={`statistical-model ${props.carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('statistical-model')}>MODELOS ESTATÍSTICOS</div>
-      </div>
-      {props.carouselType === 'study' ? <CarouselByType type='study' isDesktop={true} /> : null}
-      {props.carouselType === 'data' ? <CarouselByType type='data' isDesktop={true} /> : null}
-      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' isDesktop={true} /> : null}
-    </div>
-  )
-}
-
-const MobileCarousel = (props) => {
-  return (
-    <div>
-      <div className='options-selector'>
-        <div className={`study ${props.carouselType === 'study' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('study')}>ESTUDOS</div>
-        <div className={`data ${props.carouselType === 'data' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('data')}>DADOS</div>
-        <div className={`statistical-model ${props.carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => props.handleCarrouselChange('statistical-model')}>MODELOS ESTATÍSTICOS</div>
-      </div>
-      {props.carouselType === 'study' ? <CarouselByType type='study' isMobile={true} /> : null}
-      {props.carouselType === 'data' ? <CarouselByType type='data' isMobile={true} /> : null}
-      {props.carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' isMobile={true} /> : null}
-    </div>
-  )
-}
-
 function Carousel() {
   const [carouselType, setCarouselType] = useState('study')
   const changeCarousel = (type) => setCarouselType(type)
   return (
     <Container className='carousel'>
-      <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <MobileCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType} />
-      </MediaQuery>
-      <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-        <DesktopCarousel handleCarrouselChange={changeCarousel} carouselType={carouselType} />
-      </MediaQuery>
+      <div>
+        <div className='options-selector'>
+          <div className={`study ${carouselType === 'study' ? 'active' : ''}`} onClick={() => changeCarousel('study')}>ESTUDOS</div>
+          <div className={`data ${carouselType === 'data' ? 'active' : ''}`} onClick={() => changeCarousel('data')}>DADOS</div>
+          <div className={`statistical-model ${carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => changeCarousel('statistical-model')}>MODELOS ESTATÍSTICOS</div>
+        </div>
+        <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          {carouselType === 'study' ? <CarouselByType type='study' desktop={true} /> : null}
+          {carouselType === 'data' ? <CarouselByType type='data' desktop={true} /> : null}
+          {carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' desktop={true} /> : null}
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
+          {carouselType === 'study' ? <CarouselByType type='study' mobile={true} /> : null}
+          {carouselType === 'data' ? <CarouselByType type='data' mobile={true} /> : null}
+          {carouselType === 'statistical-model' ? <CarouselByType type='statistical_model' mobile={true} /> : null}
+        </MediaQuery>
+      </div>
     </Container>
   );
 }
