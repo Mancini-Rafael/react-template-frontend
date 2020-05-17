@@ -17,10 +17,10 @@ import './Home.scss'
 const DesktopHomePage = () => {
   return (
     <div>
-      <Banner title="Começe a traçar o  seu plano de ação pós-crise"
-        subtitle="A Mapfry reúne neste mapa informações de todos os
-                          municípios brasileiros para ajudar a retomada econômica nas 
-                          cidades mais afetadas pela pandemia do novo Coronavírus."
+      <Banner title="Um mundo novo começa agora."
+        subtitle="Comece a entender esse novo momento econômico e social.
+                  A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
+                  considerando as principais mudanças que estão em curso."
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
@@ -78,10 +78,10 @@ const DesktopHomePage = () => {
 const MobileHomePage = () => {
   return (
     <div>
-      <Banner title="Começe a traçar o  seu plano de ação pós-crise"
-        subtitle="A Mapfry reúne neste mapa informações de todos os
-                          municípios brasileiros para ajudar a retomada econômica nas 
-                          cidades mais afetadas pela pandemia do novo Coronavírus."
+      <Banner title="Um mundo novo começa agora."
+        subtitle="Comece a entender esse novo momento econômico e social. 
+                  A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
+                  considerando as principais mudanças que estão em curso."
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"

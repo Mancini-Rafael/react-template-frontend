@@ -28,7 +28,7 @@ const cardsInfo = {
       },
       {
         title: 'ESTUDOS',
-        topic: 'Desenho de Territórios',
+        topic: 'Vocação para imóveis e terrenos',
         text: 'Saiba qual é a tendência para as áreas em que seu imóvel ou terreno estão presentes'
       }
     ]
@@ -42,8 +42,8 @@ const cardsInfo = {
       },
       {
         title: 'DADOS',
-        topic: 'Enriquecimento de bases de Dados',
-        text: 'Evite a canibalização entre unidades, crie sinergia entre seus pontos  e antecipe a sua expansão'
+        topic: 'Enriquecimento de base de dados',
+        text: 'Associe dados do acervo Mapfry aos seus dados de negócio.'
       },
       {
         title: 'DADOS',
@@ -72,22 +72,22 @@ const cardsInfo = {
       {
         title: 'MODELOS ESTATÍSTICOS',
         topic: 'Atratividade Comercial',
-        text: 'Compare os dados de desempenho do seu negócio com o de regiões que pretende atingir'
+        text: 'Correlacione os dados de desempenho de seus negócios com as características de cada mercado e entenda como seria seu desempenho em cada lugar.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',
-        topic: 'Espelhamento de oportunidades',
-        text: 'Encontre áreas com oportunidades de performance semelhantes as dos seus negócios'
+        topic: 'Espelhamento de Oportunidades',
+        text: 'Partindo das áreas onde seu negócio tem o melhor desempenho podemos encontrar outras semelhantes.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',
-        topic: 'PMA - Potencial Máximo Alcançável',
-        text: 'Encontre áreas com oportunidades de performance semelhantes as dos seus negócios'
+        topic: 'Potencial Máximo Alcançável',
+        text: 'Partindo de técnicas de estatística multivariada chegamos ao desempenho ótimo alcançável em cada região.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',
         topic: 'Balanceamento de territórios',
-        text: 'Equilibre sua presença de mercado com o tamanho das oportunidades'
+        text: 'Equilibre sua presença de mercado com o tamanho das oportunidades.'
       }
     ]
   }

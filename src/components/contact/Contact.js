@@ -14,11 +14,11 @@ import checkSymbol from '../../assets/images/check-symbol.png'
 // eslint-disable-next-line
 const contactTexts = {
   beta_user: {
-    text: 'Seja um usuário beta e tenha acesso a plataforma Mapfry',
-    confirmation: 'Aguarde o nosso contato sobre o seu login de usuário beta'
+    text: 'Seja um usuário beta e conheça antes a plataforma Mapfry',
+    confirmation: 'Que bom ter você aqui! Retornaremos seu contato com mais informações.'
   },
   data_partner: {
-    text: 'Cadastre-se como parceiro de dados Mapfry e tenha nossa plataforma',
+    text: 'Uma plataforma aberta para os melhores conteúdos. Venha fazer parte.',
     confirmation: 'Entraremos em contato para sabermos mais sobre a nossa parceria de dados'
   },
   default: {
