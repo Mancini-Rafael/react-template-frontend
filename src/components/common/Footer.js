@@ -68,6 +68,7 @@ function Footer() {
         <Row className='bottom-row'>
           <Col className='bottom-col'>
             <div className='title'>MAPFRY 2020</div>
+            <div className='copyright-info text-link'>Copyright 2020 @ Mapfry. Todos os direitos reservados.</div>
             <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
               <div className='links'>
                 <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>

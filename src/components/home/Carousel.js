@@ -72,17 +72,17 @@ const cardsInfo = {
       {
         title: 'MODELOS ESTATÍSTICOS',
         topic: 'Atratividade Comercial',
-        text: 'Correlacione os dados de desempenho de seus negócios com as características de cada mercado e entenda como seria seu desempenho em cada lugar.'
+        text: 'Correlacione os dados de desempenho de seus negócios com as características de cada mercado.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',
         topic: 'Espelhamento de Oportunidades',
-        text: 'Partindo das áreas onde seu negócio tem o melhor desempenho podemos encontrar outras semelhantes.'
+        text: 'Encontre áreas com perfil semelhante àquelas onde você tem seu melhor desempenho.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',
         topic: 'Potencial Máximo Alcançável',
-        text: 'Partindo de técnicas de estatística multivariada chegamos ao desempenho ótimo alcançável em cada região.'
+        text: 'Técnicas de estatística multivariada para chegar ao desempenho ótimo em cada região.'
       },
       {
         title: 'MODELOS ESTATÍSTICOS',

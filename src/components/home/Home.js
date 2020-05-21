@@ -17,10 +17,10 @@ import './Home.scss'
 const DesktopHomePage = () => {
   return (
     <div>
-      <Banner title="Um mundo novo começa agora."
+      <Banner title="Um mundo novo começa agora"
         subtitle="Comece a entender esse novo momento econômico e social.
                   A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
-                  considerando as principais mudanças que estão em curso."
+                  considerando as principais mudanças que estão em curso"
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
@@ -37,7 +37,7 @@ const DesktopHomePage = () => {
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
-        <CTAButton showCaret={true} caretColor='black' redirectPath='/contact?type=beta_user' className='CTAInterface' title='Saiba mais' />
+        <CTAButton showCaret={true} caretColor='black' redirectPath='/sign_up' className='CTAInterface' title='Saiba mais' />
         <Container className='platform-features'>
           <Row>
             <Col className='feature-layerview'>
@@ -78,10 +78,10 @@ const DesktopHomePage = () => {
 const MobileHomePage = () => {
   return (
     <div>
-      <Banner title="Um mundo novo começa agora."
+      <Banner title="Um mundo novo começa agora"
         subtitle="Comece a entender esse novo momento econômico e social. 
                   A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
-                  considerando as principais mudanças que estão em curso."
+                  considerando as principais mudanças que estão em curso"
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
