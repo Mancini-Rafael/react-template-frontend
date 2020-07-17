@@ -29,19 +29,19 @@ function SignUp(props) {
           id='sign-up'
           sectionClassName='sign-up'
           titleClassName="sign-up-title"
-          title="PLATAFORMA MAPFRY"
+          title="BLA BLA"
           subtitleClassName="sign-up-subtitle"
-          subtitle="Faça parte da nova solução de Geomarketing"></Section>
+          subtitle="Bla bla bla"></Section>
       </Container>
       <Container className='sign-up-cards'>
         <SignUpCard logoSrc={betaImg}
-              text='Ser um usuário beta'
+              text='Bla bla'
               redirectPath='/contact?type=beta_user'/>
         <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
           <div className='cards-divider'></div>
         </MediaQuery>
         <SignUpCard logoSrc={dataImg}
-              text='Ser um parceiro de dados'
+              text='Bla bla bla'
               redirectPath='/contact?type=data_partner'/>
       </Container>
     </div>

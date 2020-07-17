@@ -4,6 +4,6 @@ import App from '../App'
 
 test('renders', () => {
   const { getByText } = render(<App />);
-  const titleElement = getByText(/mapfry/);
+  const titleElement = getByText(/template/);
   expect(titleElement).toBeInTheDocument();
 });

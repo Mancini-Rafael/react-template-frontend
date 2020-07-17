@@ -2,9 +2,6 @@ import React from 'react';
 import { Container, Card, Image } from 'react-bootstrap';
 import Section from '../common/Section'
 import linkedinLogo from '../../assets/images/logo-linkedin-icon.svg';
-import maurilioImg from '../../assets/images/team_photo_maurilio.png';
-import ryuImg from '../../assets/images/team_photo_ryu.png';
-import joaoImg from '../../assets/images/team_photo_joao.png';
 import MediaQuery from 'react-responsive'
 import './About.scss'
 
@@ -31,30 +28,32 @@ function About() {
         <Section id='who-are-we' 
                 sectionClassName='who-are-we'
                 titleClassName="who-are-we-title"
-                title="QUEM SOMOS"
+                title="BLAB BLAB"
                 subtitleClassName="who-are-we-subtitle"
-                subtitle="Veteranos em geomarketing" />
+                subtitle="Bla bla bla bla bla" />
         
         <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
-          <div className='about-formula'>MAPAS + DADOS + TECNOLOGIA = TRANSFORMAÇÃO</div>
+          <div className='about-formula'>LOREM IPSUM DOLOR SIM LAMET</div>
         </MediaQuery>
         <div className='about-description'>
           <p>
-            Com uma trajetória  de muitos anos de dedicação ao Geomarketing, nossos caminhos se 
-            cruzaram e desde então começamos a imaginar como poderíamos construir algo juntos. 
-            Partimos da paixão comum por mapas, dados, tecnologia e do incrível poder que esta 
-            combinação têm para transformar a vida cotidiana e chegar a soluções que tenham um 
-            verdadeiro impacto na sociedade.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
           <p>
-            Combinamos um grande volume de informações e em diferentes formas. Sendo assim, na 
-            Mapfry conseguimos aproximar análises do mundo real em um ambiente que proporciona 
-            a geração de insights para a solução de problemas de regiões e grandes cidades.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
         </div>
         <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
           <div className='our-team-title'>
-            NOSSO TIME
+            LOREM IPSUM
           </div>
         </MediaQuery>
         <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
@@ -66,22 +65,22 @@ function About() {
       </Container>
       <div className='team-cards'>
         <MemberCard
-          title='DADOS'
-          name='Maurilio Soares'
-          imgSrc={maurilioImg}
-          linkedinSrc='https://www.linkedin.com/in/mauriliojbsoares/'
+          title='DUMMY TEXT'
+          name='BLABLA'
+          imgSrc="https://dummyimage.com/299x361/000/fff"
+          linkedinSrc='https://www.linkedin.com/in/bla/'
         />
         <MemberCard
-          title='SOLUÇÕES'
-          name='João Caetano'
-          imgSrc={joaoImg}
-          linkedinSrc='https://www.linkedin.com/in/joao-eduardo-caetano/'
+          title='DUMMY TEXT'
+          name='BLABLA'
+          imgSrc="https://dummyimage.com/299x361/000/fff"
+          linkedinSrc='https://www.linkedin.com/in/bla/'
         />
         <MemberCard
-          title='TECNOLOGIA'
-          name='Ryuichi Ogawa'
-          imgSrc={ryuImg}
-          linkedinSrc='https://www.linkedin.com/in/ryuichiogawa/'
+          title='DUMMY TEXT'
+          name='BLABLA'
+          imgSrc="https://dummyimage.com/299x361/000/fff"
+          linkedinSrc='https://www.linkedin.com/in/bla/'
         />
       </div>
     </div>

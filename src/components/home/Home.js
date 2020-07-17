@@ -17,23 +17,21 @@ import './Home.scss'
 const DesktopHomePage = () => {
   return (
     <div>
-      <Banner title="Um mundo novo começa agora"
-        subtitle="Comece a entender esse novo momento econômico e social.
-                  A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
-                  considerando as principais mudanças que estão em curso"
+      <Banner title="Lorem ipsum"
+        subtitle="Lorem ipsum"
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
-        title="SOLUÇÕES"
+        title="LOREM"
         subtitleClassName="solutions-subtitle"
-        subtitle="Encontre a melhor solução para o seu negócio"></Section>
+        subtitle="Lorem Ipsum"></Section>
       <Carousel />
       <Container className='rectangle'>
         <Section id='platform' sectionClassName='platform'
           titleClassName="platform-title"
-          title="PLATAFORMA MAPFRY"
+          title="BLABLA BLABLA"
           subtitleClassName="platform-subtitle"
-          subtitle="Faça parte da nova solução de Geomarketing"></Section>
+          subtitle="Bla bla bla bla"></Section>
         <Container className='ilustracao-interface'>
           <Image src={ilustracaoInterface} fluid className='ilustration'></Image>
         </Container>
@@ -42,15 +40,14 @@ const DesktopHomePage = () => {
           <Row>
             <Col className='feature-layerview'>
               <Image src={layerviewImg} fluid className='layerviewImg'></Image>
-              <div className='layerview-title'>LAYERVIEW</div>
-              <div className='layerview-text'>Crie análises dinâmicas e tenha
-                                                a visualização dos dados em mapas</div>
+              <div className='layerview-title'>Bla bla</div>
+              <div className='layerview-text'>Bla bla</div>
             </Col>
             <div className='feature-divider'></div>
             <Col className='feature-reportview'>
               <Image src={reportviewImg} fluid className='reportviewImg'></Image>
-              <div className='reportview-title'>REPORTVIEW</div>
-              <div className='reportview-text'>Visualize seus dados em dashboards e tome decisões sólidas</div>
+              <div className='reportview-title'>Bla bla</div>
+              <div className='reportview-text'>Bla bla bla</div>
             </Col>
           </Row>
         </Container>
@@ -60,12 +57,9 @@ const DesktopHomePage = () => {
           titleClassName="pandemic-title"
           title="COVID-19"
           subtitleClassName="pandemic-subtitle"
-          subtitle=" Mapa econômico brasileiro"></Section>
+          subtitle=" Bla bla bla"></Section>
         <div className='pandemic-description'>
-          Cadastre-se para acessar o estudo que
-          mostra a situação econômica dos municípios,
-          sua exposição à epidemia o os principais
-          desafios para a recuperação.
+          Bla bla bla
           </div>
         <Zoom>
           <Heatmap />
@@ -78,23 +72,21 @@ const DesktopHomePage = () => {
 const MobileHomePage = () => {
   return (
     <div>
-      <Banner title="Um mundo novo começa agora"
-        subtitle="Comece a entender esse novo momento econômico e social. 
-                  A Mapfry nasceu em meio à crise do Coronavírus e estruturou seus conteúdos 
-                  considerando as principais mudanças que estão em curso"
+      <Banner title="Bla bla"
+        subtitle="bla bla"
       />
       <Section id='solution' sectionClassName='solutions'
         titleClassName="solutions-title"
-        title="SOLUÇÕES"
+        title="BLABLA"
         subtitleClassName="solutions-subtitle"
-        subtitle="Encontre a melhor solução para o seu negócio"></Section>
+        subtitle="Bla bla bla"></Section>
       <Carousel></Carousel>
       <Container className='rectangle'>
         <Section id='platform' sectionClassName='platform'
           titleClassName="platform-title"
-          title="Soluções"
+          title="Blabla"
           subtitleClassName="platform-subtitle"
-          subtitle="Faça parte da nova solução de Geomarketing"></Section>
+          subtitle="Bla bla bla"></Section>
         <Container className='ilustracao-interface'>
           <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
             <Image src={ilustracaoInterfaceMobile} fluid className='ilustration'></Image>
@@ -109,17 +101,16 @@ const MobileHomePage = () => {
           <Row>
             <Col className='feature-layerview'>
               <Image src={layerviewImg} fluid className='layerviewImg'></Image>
-              <div className='layerview-title'>LAYERVIEW</div>
-              <div className='layerview-text'>Crie análises dinâmicas e tenha
-                                                  a visualização dos dados em mapas</div>
+              <div className='layerview-title'>BLABLA</div>
+              <div className='layerview-text'>Bla bla bla</div>
             </Col>
           </Row>
           <div className='feature-divider'></div>
           <Row>
             <Col className='feature-reportview'>
               <Image src={reportviewImg} fluid className='reportviewImg'></Image>
-              <div className='reportview-title'>REPORTVIEW</div>
-              <div className='reportview-text'>Visualize seus dados em dashboards e tome decisões sólidas</div>
+              <div className='reportview-title'>BLABLA</div>
+              <div className='reportview-text'>Bla bla bla</div>
             </Col>
           </Row>
         </Container>
@@ -129,12 +120,9 @@ const MobileHomePage = () => {
           titleClassName="pandemic-title"
           title="COVID-19"
           subtitleClassName="pandemic-subtitle"
-          subtitle=" Mapa econômico brasileiro"></Section>
+          subtitle=" Bla bla bla"></Section>
         <div className='pandemic-description'>
-          Cadastre-se para acessar o estudo que
-          mostra a situação econômica dos municípios,
-          sua exposição à epidemia o os principais
-          desafios para a recuperação.
+          Bla Bla Bla Bla
         </div>
         <Zoom>
           <Heatmap />

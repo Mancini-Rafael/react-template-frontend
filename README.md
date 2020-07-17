@@ -1,4 +1,4 @@
-## Mapfry
+## React Template Frontend
 
 - **NodeJS:** 13.6.0
 - **Yarn:** 1.21.1
@@ -6,7 +6,7 @@
 Other packages versions can be found at the [```package.json```](package.json)
 
 ### PROJECT DESCRIPTION
-- This project implements a ReactJS based front-end app for the company Mapfry
+- This project implements a ReactJS based front-end app template
 
 ### Installing
 - The project uses docker and docker-compose to unify all dependencies. To set up, run:

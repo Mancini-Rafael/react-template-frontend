@@ -2,7 +2,7 @@
 
 set -e
 
-echo "=== MAPFRY APP ENTRYPOINT ==="
+echo "=== APP ENTRYPOINT ==="
 
 COMMAND="$1"
 

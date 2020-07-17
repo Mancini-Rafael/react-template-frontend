@@ -14,16 +14,16 @@ import checkSymbol from '../../assets/images/check-symbol.png'
 // eslint-disable-next-line
 const contactTexts = {
   beta_user: {
-    text: 'Seja um usuário beta e conheça antes a plataforma Mapfry',
-    confirmation: 'Que bom ter você aqui! Retornaremos seu contato com mais informações.'
+    text: 'Lrem ipsum dolor sin lamet blablabla',
+    confirmation: 'Lorem ipsum dolor sin amet'
   },
   data_partner: {
-    text: 'Uma plataforma aberta para os melhores conteúdos. Venha fazer parte.',
-    confirmation: 'Entraremos em contato para sabermos mais sobre a nossa parceria de dados'
+    text: 'Lorem ipsum dolor sin lamet',
+    confirmation: 'Lorem Ipsum'
   },
   default: {
-    text: 'Cadastre-se e receba conteúdos que preparamos para você',
-    confirmation: 'Tudo pronto para você receber os melhores estudos da Mapfry.'
+    text: 'Lorem ipsum',
+    confirmation: 'Lorem ipsum'
   }
 }
 
@@ -77,7 +77,7 @@ const Animation = (props) => {
     <Zoom>
       <div className='email-sent-container'>
         <Image className='all-ok' src={checkSymbol} />
-        <div className='confirmation-title'>Cadastro Realizado!</div>
+        <div className='confirmation-title'>Lorem Ipsum!</div>
         <div className='confirmation-description'>
           {
             // eslint-disable-next-line

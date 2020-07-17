@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Image, Container } from 'react-bootstrap';
 import MediaQuery from 'react-responsive'
 import './Footer.scss';
-import logo from '../../assets/images/Logo-Mapfry.svg'
 import { Link } from 'react-router-dom';
 
 const findPos = (obj) => {
@@ -30,7 +29,7 @@ function Footer() {
         <Row>
           <Col className='logo'>
             <Link to='/'>
-              <Image src={logo} />
+              <Image src="https://dummyimage.com/107x31/000/fff" />
             </Link>
           </Col>
         </Row>
@@ -38,26 +37,26 @@ function Footer() {
           <Col className='links' xs={6}>
             <Row>
               <Col className='first'>
-                <div className='title'>INSTITUCIONAL</div>
+                <div className='title'>BLABLA</div>
                 <Link to='/about'>
-                  <div className='text-link'>Sobre Nós</div>
+                  <div className='text-link'>BLABLA</div>
                 </Link>
-                <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>
-                  <div className='text-link'>Blog</div>
+                <a rel="noopener noreferrer" target='_blank' href='https://medium.com/'>
+                  <div className='text-link'>Bla</div>
                 </a>
-                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>
+                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/'>
                   <div className='text-link'>Linkedin</div>
                 </a>
               </Col>
               <Col className='second'>
-                <div className='title'>MAPFRY</div>
+                <div className='title'>Blabla</div>
                 <div className='text-link' onClick={() => scrollTo('solution-section')}>Soluções</div>
                 <div className='text-link' onClick={() => scrollTo('platform-section')}>Plataforma</div>
               </Col>
               <Col className='third'>
                 <div className='title'>CONTATO</div>
                 <Link to='/contact?type=default'>
-                  <div className='text-link'>hello@mapfry.com</div>
+                  <div className='text-link'>email@host.com</div>
                 </Link>
 
               </Col>
@@ -67,14 +66,14 @@ function Footer() {
         <div className='feature-divider'></div>
         <Row className='bottom-row'>
           <Col className='bottom-col'>
-            <div className='title'>MAPFRY 2020</div>
-            <div className='copyright-info text-link'>Copyright 2020 @ Mapfry. Todos os direitos reservados.</div>
+            <div className='title'>Blabla 2020</div>
+            <div className='copyright-info text-link'>Copyright 2020 @ Blabla. Todos os direitos reservados.</div>
             <MediaQuery minDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
               <div className='links'>
-                <a rel="noopener noreferrer" target='_blank' href='https://medium.com/@mapfry'>
+                <a rel="noopener noreferrer" target='_blank' href='https://medium.com/'>
                   <div className='title'>MEDIUM</div>
                 </a>
-                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/company/mapfry/'>
+                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/'>
                   <div className='title'>LINKEDIN</div>
                 </a>
               </div>

@@ -50,7 +50,7 @@ function ContactForm(props) {
         </Form.Group>
         <Form.Group controlId="contact-email">
           <Form.Label>Email *</Form.Label>
-          <Form.Control required name='email' type="email" placeholder="email@mapfry.com" />
+          <Form.Control required name='email' type="email" placeholder="email@teste.com" />
           <Form.Control.Feedback type="invalid">
             Por favor preencha um e-mail válido.
           </Form.Control.Feedback>
@@ -60,7 +60,7 @@ function ContactForm(props) {
           <Form.Control as="textarea" rows="3" name='message' />
         </Form.Group>
         <Form.Group controlId="contact-newsletter-accept">
-          <Form.Check type="checkbox" name='receberEmail' defaultChecked={true} label="Quero receber e-mails e novidades da Mapfry" />
+          <Form.Check type="checkbox" name='receberEmail' defaultChecked={true} label="Quero receber e-mails e novidades" />
         </Form.Group>
         <Button type='submit' title='Cadastrar' className="call-to-action outline-light CTAFormSubmit" variant='light'>
           Cadastrar <Image src={blackCaretImg} fluid />

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import Slide from 'react-reveal/Slide';
 import { Carousel as RRCarousel } from 'react-responsive-carousel';
 
 import './Carousel.scss'
@@ -12,82 +11,82 @@ const cardsInfo = {
   study: {
     info: [
       {
-        title: 'ESTUDOS',
-        topic: 'Identificação e Validação de Pontos',
-        text: 'Encontre o melhor lugar para o seu negócio ou valide uma área de interesse'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'ESTUDOS',
-        topic: 'Planejamento de Redes',
-        text: 'Evite a canibalização entre unidades, crie sinergia entre seus pontos e antecipe a sua expansão'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'ESTUDOS',
-        topic: 'Desenho de Territórios',
-        text: 'Entenda as características das áreas em que você pretende atuar'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'ESTUDOS',
-        topic: 'Vocação para imóveis e terrenos',
-        text: 'Saiba qual é a tendência para as áreas em que seu imóvel ou terreno estão presentes'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       }
     ]
   },
   data: {
     info: [
       {
-        title: 'DADOS',
-        topic: 'Conteúdos de Mercado',
-        text: 'Encontre o melhor lugar para o seu negócio ou valide uma área de interesse'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'DADOS',
-        topic: 'Enriquecimento de base de dados',
-        text: 'Associe dados do acervo Mapfry aos seus dados de negócio.'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'DADOS',
-        topic: 'Leads',
-        text: 'Utilize as bases de Empresas e Pontos de Interesse da Mapfry para chegar a novos clientes'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'DADOS',
-        topic: 'Fluxo',
-        text: 'Tenha uma visualização atualizada do tráfego de pessoas e veículos nas vias de seu interesse'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'DADOS',
-        topic: 'Mercado Imobiliário',
-        text: 'Tenha acesso a dados atualizados que mostram a evolução do mercado'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'DADOS',
-        topic: 'Criminalidade',
-        text: 'Dados de ocorrências criminais Bairro a Bairro com uma visão por tipo de ofensa e histórico'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       }
     ]
   },
   statistical_model: {
     info: [
       {
-        title: 'MODELOS ESTATÍSTICOS',
-        topic: 'Atratividade Comercial',
-        text: 'Correlacione os dados de desempenho de seus negócios com as características de cada mercado.'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'MODELOS ESTATÍSTICOS',
-        topic: 'Espelhamento de Oportunidades',
-        text: 'Encontre áreas com perfil semelhante àquelas onde você tem seu melhor desempenho.'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'MODELOS ESTATÍSTICOS',
-        topic: 'Potencial Máximo Alcançável',
-        text: 'Técnicas de estatística multivariada para chegar ao desempenho ótimo em cada região.'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       },
       {
-        title: 'MODELOS ESTATÍSTICOS',
-        topic: 'Balanceamento de territórios',
-        text: 'Equilibre sua presença de mercado com o tamanho das oportunidades.'
+        title: 'BLA BLA',
+        topic: 'Bla bla bla',
+        text: 'Bla bla bla'
       }
     ]
   }
@@ -126,7 +125,6 @@ const Cards = (props) => {
 }
 
 const CarouselByType = (props) => {
-  // console.log('IS DESKTOP', props.desktop, 'IS MOBILE', props.mobile)
   if (!!props.desktop) {
     return (
       <RRCarousel
@@ -195,9 +193,9 @@ function Carousel() {
     <Container className='carousel'>
       <div>
         <div className='options-selector'>
-          <div className={`study ${carouselType === 'study' ? 'active' : ''}`} onClick={() => changeCarousel('study')}>ESTUDOS</div>
-          <div className={`data ${carouselType === 'data' ? 'active' : ''}`} onClick={() => changeCarousel('data')}>DADOS</div>
-          <div className={`statistical-model ${carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => changeCarousel('statistical-model')}>MODELOS ESTATÍSTICOS</div>
+          <div className={`study ${carouselType === 'study' ? 'active' : ''}`} onClick={() => changeCarousel('study')}>BLABLA</div>
+          <div className={`data ${carouselType === 'data' ? 'active' : ''}`} onClick={() => changeCarousel('data')}>BLABLA</div>
+          <div className={`statistical-model ${carouselType === 'statistical-model' ? 'active' : ''}`} onClick={() => changeCarousel('statistical-model')}>BLABLA BLABLA</div>
         </div>
         <MediaQuery maxDeviceWidth={parseInt(process.env.REACT_APP_DESKTOP_WIDTH_THRESHOLD)}>
           {carouselType === 'study' ? <CarouselByType type='study' desktop={true} /> : null}
